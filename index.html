@@ -29,26 +29,6 @@
                         <a href="#contact" class="nav-link">Contact</a>
                     </div>
                 </div>
-                <!-- Mobile menu button -->
-                <div class="mobile-menu-btn-wrapper">
-                    <button id="mobile-menu-button" type="button" class="mobile-menu-btn" aria-label="Open menu">
-                        <svg stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Mobile menu -->
-            <div id="mobile-menu" class="mobile-menu hidden">
-                <div class="mobile-menu-inner">
-                    <a href="#home" class="mobile-nav-link">Home</a>
-                    <a href="#about" class="mobile-nav-link">About</a>
-                    <a href="#contact" class="mobile-nav-link">Contact</a>
-                    <hr class="mobile-menu-divider">
-                    <a href="privacy.html" class="mobile-nav-link mobile-nav-link--small">Privacy Policy</a>
-                    <a href="terms.html" class="mobile-nav-link mobile-nav-link--small">Terms of Use</a>
-                </div>
             </div>
         </nav>
     </header>
@@ -291,6 +271,28 @@
         </div>
     </footer>
 
+    <!-- iOS 26 Liquid Glass Tabbar -->
+    <nav class="tabbar" id="tabbar">
+        <a href="#home" class="tabbar-item active" data-section="home">
+            <svg class="tabbar-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+            <span class="tabbar-label">Home</span>
+        </a>
+        <a href="#about" class="tabbar-item" data-section="about">
+            <svg class="tabbar-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span class="tabbar-label">About</span>
+        </a>
+        <a href="#contact" class="tabbar-item" data-section="contact">
+            <svg class="tabbar-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <span class="tabbar-label">Contact</span>
+        </a>
+    </nav>
+
     <!-- Scripts -->
     <script>
         // Smooth scrolling for navigation links
@@ -305,20 +307,52 @@
                         block: 'start'
                     });
                 }
-                
-                // Close mobile menu after clicking a link
-                var mobileMenu = document.getElementById('mobile-menu');
-                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('hidden');
-                }
             });
         });
 
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            var mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
+        // Tabbar visibility on scroll
+        var tabbar = document.getElementById('tabbar');
+        var lastScrollY = 0;
+        var scrollThreshold = 100;
+        
+        function handleScroll() {
+            var currentScrollY = window.scrollY;
+            
+            if (currentScrollY > scrollThreshold) {
+                tabbar.classList.add('visible');
+            } else {
+                tabbar.classList.remove('visible');
+            }
+            
+            lastScrollY = currentScrollY;
+        }
+        
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        
+        // Active section tracking
+        var sections = document.querySelectorAll('section[id]');
+        var tabbarItems = document.querySelectorAll('.tabbar-item');
+        
+        function updateActiveSection() {
+            var scrollY = window.scrollY + window.innerHeight / 2;
+            
+            sections.forEach(function(section) {
+                var sectionTop = section.offsetTop;
+                var sectionHeight = section.offsetHeight;
+                var sectionId = section.getAttribute('id');
+                
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    tabbarItems.forEach(function(item) {
+                        item.classList.remove('active');
+                        if (item.getAttribute('data-section') === sectionId) {
+                            item.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', updateActiveSection, { passive: true });
     </script>
 </body>
 </html>

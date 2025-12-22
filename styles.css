@@ -117,14 +117,14 @@ button {
 
 .logo {
     flex-shrink: 0;
-    font-size: 1rem;
+    font-size: 0.8125rem;
     font-weight: 600;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 @media (min-width: 768px) {
     .logo {
-        font-size: 1.125rem;
+        font-size: 0.875rem;
     }
 }
 
@@ -562,6 +562,103 @@ button {
 .project-link-icon {
     width: 1.25rem;
     height: 1.25rem;
+}
+
+/* Project Badge */
+.project-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.375rem 0.75rem;
+    background: linear-gradient(135deg, var(--orange-500), var(--orange-600));
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 2rem;
+}
+
+.project-card-inner {
+    position: relative;
+}
+
+/* Alert Modal */
+.alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    padding: 1rem;
+}
+
+.alert-overlay.visible {
+    opacity: 1;
+}
+
+.alert-modal {
+    background: var(--gray-800);
+    border: 1px solid var(--gray-700);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    max-width: 320px;
+    width: 100%;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.alert-overlay.visible .alert-modal {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.alert-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.alert-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+}
+
+.alert-text {
+    color: var(--gray-300);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.alert-btn {
+    width: 100%;
+    padding: 0.875rem;
+    background: var(--apple-500);
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    -webkit-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+
+.alert-btn:hover {
+    background: var(--apple-600);
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use - MELNI APPS, LLC</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-inner">
+                <div class="logo">
+                    <a href="index.html" class="gradient-text">MELNI APPS, LLC</a>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-links-inner">
+                        <a href="index.html" class="nav-link">← Back to Home</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="mobile-menu-btn-wrapper">
+                    <button id="mobile-menu-button" type="button" class="mobile-menu-btn" aria-label="Open menu">
+                        <svg stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="mobile-menu hidden">
+                <div class="mobile-menu-inner">
+                    <a href="index.html" class="mobile-nav-link">← Back to Home</a>
+                    <a href="privacy.html" class="mobile-nav-link mobile-nav-link--small">Privacy Policy</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <main class="section section--dark">
+        <div class="container">
+            <div class="content-card">
+                <h1 class="content-title">
+                    Terms of <span class="gradient-text">Use</span>
+                </h1>
+                <p class="content-date"><strong>Effective Date:</strong> July 24, 2025</p>
+
+                <div>
+                    <p class="content-text">
+                        Welcome to MELNI APPS, LLC. These Terms of Use ("Terms") govern your use of our website and any future mobile or web applications ("Services"). By accessing or using our Services, you agree to these Terms.
+                    </p>
+
+                    <h2 class="content-heading">1. Use of Services</h2>
+                    <p class="content-text">
+                        You agree to use our Services only for lawful purposes and in accordance with these Terms. You must not misuse or attempt to interfere with the proper working of our Services.
+                    </p>
+
+                    <h2 class="content-heading">2. Intellectual Property</h2>
+                    <p class="content-text">
+                        All content, trademarks, logos, and designs are the property of MELNI APPS, LLC and may not be used without written permission.
+                    </p>
+
+                    <h2 class="content-heading">3. Disclaimer</h2>
+                    <p class="content-text">
+                        The Services are provided "as is" without warranties of any kind. We do not guarantee that the Services will be error-free or available at all times.
+                    </p>
+
+                    <h2 class="content-heading">4. Limitation of Liability</h2>
+                    <p class="content-text">
+                        We are not liable for any damages or losses resulting from your use or inability to use our Services.
+                    </p>
+
+                    <h2 class="content-heading">5. Modifications</h2>
+                    <p class="content-text">
+                        We reserve the right to modify these Terms at any time. Continued use of the Services after changes means you accept the updated Terms.
+                    </p>
+
+                    <h2 class="content-heading">6. Governing Law</h2>
+                    <p class="content-text">
+                        These Terms are governed by the laws of the Republic of Armenia, without regard to its conflict of laws principles.
+                    </p>
+
+                    <h2 class="content-heading">7. Contact</h2>
+                    <p class="content-text">
+                        If you have any questions about these Terms, please contact us at 
+                        <a href="mailto:sashaaaamyr@gmail.com" class="content-link">sashaaaamyr@gmail.com</a>.
+                    </p>
+
+                    <div class="content-footer">
+                        <p>© 2025 <span class="gradient-text">MELNI APPS, LLC</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer footer--simple">
+        <div class="container container--wide text-center">
+            <p class="footer-copyright">© 2025 <span class="gradient-text">MELNI APPS, LLC</span>. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

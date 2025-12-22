@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MELNI APPS, LLC</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-inner">
+                <div class="logo">
+                    <a href="index.html" class="gradient-text">MELNI APPS, LLC</a>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-links-inner">
+                        <a href="index.html" class="nav-link">← Back to Home</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="mobile-menu-btn-wrapper">
+                    <button id="mobile-menu-button" type="button" class="mobile-menu-btn" aria-label="Open menu">
+                        <svg stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="mobile-menu hidden">
+                <div class="mobile-menu-inner">
+                    <a href="index.html" class="mobile-nav-link">← Back to Home</a>
+                    <a href="terms.html" class="mobile-nav-link mobile-nav-link--small">Terms of Use</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <main class="section section--dark">
+        <div class="container">
+            <div class="content-card">
+                <h1 class="content-title">
+                    Privacy <span class="gradient-text">Policy</span>
+                </h1>
+                <p class="content-date"><strong>Effective Date:</strong> July 24, 2025</p>
+
+                <div>
+                    <p class="content-text">
+                        This Privacy Policy describes how MELNI APPS, LLC ("we", "our", or "us") handles your personal information when you use our website or services.
+                    </p>
+
+                    <h2 class="content-heading">1. Information Collection</h2>
+                    <p class="content-text">
+                        At this time, we do not collect, store, or process any personal information through this website.
+                    </p>
+
+                    <h2 class="content-heading">2. Future Application Data</h2>
+                    <p class="content-text">
+                        When our mobile or web applications are launched, we may collect data such as email addresses or device identifiers to improve your experience. Any such data will be handled in accordance with this policy and applicable laws (including GDPR and CCPA).
+                    </p>
+
+                    <h2 class="content-heading">3. Data Security</h2>
+                    <p class="content-text">
+                        We are committed to protecting your data and will implement appropriate technical and organizational measures when user data is processed.
+                    </p>
+
+                    <h2 class="content-heading">4. Third-Party Services</h2>
+                    <p class="content-text">
+                        If we integrate with third-party services (e.g., analytics, payment providers), we will disclose it in the updated version of this policy.
+                    </p>
+
+                    <h2 class="content-heading">5. Contact</h2>
+                    <p class="content-text">
+                        If you have any questions about this Privacy Policy, you can contact us at 
+                        <a href="mailto:sashaaaamyr@gmail.com" class="content-link">sashaaaamyr@gmail.com</a>.
+                    </p>
+
+                    <div class="content-footer">
+                        <p>© 2025 <span class="gradient-text">MELNI APPS, LLC</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer footer--simple">
+        <div class="container container--wide text-center">
+            <p class="footer-copyright">© 2025 <span class="gradient-text">MELNI APPS, LLC</span>. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

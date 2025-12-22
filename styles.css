@@ -96,10 +96,17 @@ button {
     position: -webkit-sticky;
     top: 0;
     z-index: 50;
-    background-color: rgba(0, 0, 0, 0.95);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    border-bottom: 1px solid var(--gray-800);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.08) 0%,
+        rgba(255, 255, 255, 0.03) 100%
+    );
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .nav-container {
@@ -117,14 +124,19 @@ button {
 
 .logo {
     flex-shrink: 0;
+}
+
+.logo h1 {
     font-size: 0.8125rem;
     font-weight: 600;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.02em;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
-    .logo {
-        font-size: 0.875rem;
+    .logo h1 {
+        font-size: 0.9375rem;
     }
 }
 
@@ -299,7 +311,150 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom right, var(--gray-900), var(--black), var(--gray-800));
+    background: var(--black);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated gradient background - Layer 1: Cyberpunk neon */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: 
+        radial-gradient(ellipse 80% 60% at 10% 90%, rgba(0, 255, 255, 0.8) 0%, transparent 45%),
+        radial-gradient(ellipse 60% 80% at 90% 10%, rgba(255, 0, 255, 0.7) 0%, transparent 45%),
+        radial-gradient(ellipse 70% 70% at 50% 60%, rgba(138, 43, 226, 0.6) 0%, transparent 40%),
+        radial-gradient(ellipse 50% 60% at 85% 75%, rgba(255, 20, 147, 0.7) 0%, transparent 40%),
+        radial-gradient(ellipse 60% 50% at 15% 25%, rgba(0, 191, 255, 0.6) 0%, transparent 35%);
+    -webkit-animation: heroGradient 4s ease-in-out infinite;
+    animation: heroGradient 4s ease-in-out infinite;
+    z-index: 0;
+    filter: blur(50px);
+}
+
+/* Layer 2: Secondary neon blobs */
+.hero-bg-layer {
+    position: absolute;
+    top: -30%;
+    left: -30%;
+    width: 160%;
+    height: 160%;
+    background: 
+        radial-gradient(ellipse 50% 50% at 75% 65%, rgba(191, 0, 255, 0.7) 0%, transparent 45%),
+        radial-gradient(ellipse 45% 55% at 25% 45%, rgba(0, 255, 200, 0.6) 0%, transparent 40%),
+        radial-gradient(ellipse 55% 45% at 55% 25%, rgba(255, 0, 128, 0.5) 0%, transparent 35%),
+        radial-gradient(ellipse 40% 40% at 40% 80%, rgba(75, 0, 130, 0.6) 0%, transparent 40%);
+    -webkit-animation: heroGradient2 5s ease-in-out infinite reverse;
+    animation: heroGradient2 5s ease-in-out infinite reverse;
+    z-index: 0;
+    filter: blur(70px);
+}
+
+/* Layer 3: Intense glow pulse */
+.hero-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(ellipse 60% 40% at 20% 80%, rgba(0, 255, 255, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse 50% 50% at 80% 20%, rgba(255, 0, 255, 0.35) 0%, transparent 50%);
+    -webkit-animation: glowPulse 1.5s ease-in-out infinite alternate;
+    animation: glowPulse 1.5s ease-in-out infinite alternate;
+    z-index: 0;
+    filter: blur(30px);
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center bottom, transparent 0%, rgba(0,0,0,0.7) 100%);
+    z-index: 1;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+@-webkit-keyframes heroGradient {
+    0%, 100% {
+        -webkit-transform: translate(0%, 0%) rotate(0deg) scale(1);
+        transform: translate(0%, 0%) rotate(0deg) scale(1);
+    }
+    33% {
+        -webkit-transform: translate(8%, -8%) rotate(5deg) scale(1.1);
+        transform: translate(8%, -8%) rotate(5deg) scale(1.1);
+    }
+    66% {
+        -webkit-transform: translate(-8%, 5%) rotate(-5deg) scale(1.05);
+        transform: translate(-8%, 5%) rotate(-5deg) scale(1.05);
+    }
+}
+
+@keyframes heroGradient {
+    0%, 100% {
+        transform: translate(0%, 0%) rotate(0deg) scale(1);
+    }
+    33% {
+        transform: translate(8%, -8%) rotate(5deg) scale(1.1);
+    }
+    66% {
+        transform: translate(-8%, 5%) rotate(-5deg) scale(1.05);
+    }
+}
+
+@-webkit-keyframes heroGradient2 {
+    0%, 100% {
+        -webkit-transform: translate(0%, 0%) rotate(0deg) scale(1);
+        transform: translate(0%, 0%) rotate(0deg) scale(1);
+    }
+    50% {
+        -webkit-transform: translate(-10%, 10%) rotate(-8deg) scale(1.15);
+        transform: translate(-10%, 10%) rotate(-8deg) scale(1.15);
+    }
+}
+
+@keyframes heroGradient2 {
+    0%, 100% {
+        transform: translate(0%, 0%) rotate(0deg) scale(1);
+    }
+    50% {
+        transform: translate(-10%, 10%) rotate(-8deg) scale(1.15);
+    }
+}
+
+@-webkit-keyframes glowPulse {
+    0% {
+        opacity: 0.6;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes glowPulse {
+    0% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
 }
 
 .hero-container {
@@ -932,7 +1087,7 @@ button {
 .footer {
     background-color: var(--black);
     color: var(--white);
-    padding: 4rem 0;
+    padding: 4rem 0 7rem;
 }
 
 .footer--simple {

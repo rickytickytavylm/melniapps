@@ -774,6 +774,34 @@ button {
     font-size: 0.875rem;
 }
 
+/* Founder Card Highlight */
+.team-card--founder {
+    position: relative;
+    border-color: var(--emerald-500);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, var(--gray-800) 100%);
+}
+
+.team-card--founder:hover {
+    border-color: var(--emerald-500);
+}
+
+.team-badge {
+    position: absolute;
+    top: -0.625rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding: 0.25rem 0.875rem;
+    background: linear-gradient(135deg, var(--emerald-500), var(--emerald-600));
+    color: var(--white);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-radius: 2rem;
+    white-space: nowrap;
+}
+
 .team-footer {
     text-align: center;
 }

@@ -221,9 +221,10 @@ button {
     position: fixed;
     bottom: 1.25rem;
     left: 50%;
-    -webkit-transform: translateX(-50%) translateY(100px);
-    -moz-transform: translateX(-50%) translateY(100px);
-    transform: translateX(-50%) translateY(100px);
+    -webkit-transform: translateX(-50%) translateY(20px);
+    -moz-transform: translateX(-50%) translateY(20px);
+    transform: translateX(-50%) translateY(20px);
+    pointer-events: none;
     z-index: 100;
     
     /* iOS 26 Liquid Glass Effect */
@@ -243,10 +244,10 @@ button {
     
     /* Animation */
     opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.4s cubic-bezier(0.32, 0.72, 0, 1);
-    -moz-transition: all 0.4s cubic-bezier(0.32, 0.72, 0, 1);
-    transition: all 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+    -moz-transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+    transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+    will-change: transform, opacity;
 }
 
 .tabbar.visible {
@@ -254,7 +255,7 @@ button {
     -moz-transform: translateX(-50%) translateY(0);
     transform: translateX(-50%) translateY(0);
     opacity: 1;
-    visibility: visible;
+    pointer-events: auto;
 }
 
 .tabbar-item {

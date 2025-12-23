@@ -550,38 +550,52 @@ button {
 }
 
 .section--dark {
-    background-color: var(--gray-900);
+    background: linear-gradient(180deg, #0a0a0f 0%, #111118 50%, #0a0a0f 100%);
     position: relative;
+    overflow: hidden;
 }
 
 .section--dark::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(ellipse 80% 50% at 20% 100%, rgba(0, 255, 255, 0.03) 0%, transparent 50%),
-        radial-gradient(ellipse 60% 40% at 80% 0%, rgba(255, 0, 255, 0.03) 0%, transparent 50%);
+    top: -20%;
+    left: -10%;
+    width: 50%;
+    height: 140%;
+    background: radial-gradient(ellipse at center, rgba(0, 255, 255, 0.08) 0%, transparent 60%);
     pointer-events: none;
+    filter: blur(60px);
+}
+
+.section--dark::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    right: -10%;
+    width: 50%;
+    height: 140%;
+    background: radial-gradient(ellipse at center, rgba(255, 0, 255, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+    filter: blur(60px);
 }
 
 .section--medium {
-    background-color: var(--gray-800);
+    background: linear-gradient(180deg, #111118 0%, #161620 50%, #111118 100%);
     position: relative;
+    overflow: hidden;
 }
 
 .section--medium::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(ellipse 50% 50% at 50% 50%, rgba(138, 43, 226, 0.02) 0%, transparent 70%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(ellipse at center, rgba(138, 43, 226, 0.06) 0%, transparent 60%);
     pointer-events: none;
+    filter: blur(80px);
 }
 
 .container {
@@ -651,22 +665,49 @@ button {
     -webkit-backdrop-filter: blur(12px);
     backdrop-filter: blur(12px);
     border-radius: 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     overflow: hidden;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .project-card:hover {
-    border-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.2);
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
     box-shadow: 
-        0 20px 50px rgba(0, 0, 0, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        0 25px 60px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Leo Recovery glow - always visible */
+.project-card--leo {
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        0 0 40px rgba(34, 211, 238, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.project-card--leo:hover {
+    box-shadow: 
+        0 25px 60px rgba(0, 0, 0, 0.4),
+        0 0 60px rgba(34, 211, 238, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Fides et Ratio glow - always visible */
+.project-card--fides {
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        0 0 40px rgba(168, 139, 90, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.project-card--fides:hover {
+    box-shadow: 
+        0 25px 60px rgba(0, 0, 0, 0.4),
+        0 0 60px rgba(168, 139, 90, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .project-card--leo {
@@ -735,12 +776,19 @@ button {
     color: var(--gray-300);
 }
 
+/* Reset button styles for project-link */
+button.project-link {
+    font-family: inherit;
+    cursor: pointer;
+}
+
 .project-link {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     color: var(--white);
     font-weight: 500;
+    font-size: 0.875rem;
     padding: 0.75rem 1.25rem;
     background: var(--gray-700);
     border-radius: 0.75rem;
@@ -916,9 +964,41 @@ button {
     border: 1px solid rgba(255, 255, 255, 0.08);
     padding: 2rem;
     text-align: center;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: visible;
+}
+
+.team-card::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border-radius: 1.1rem;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(168, 85, 247, 0.3) 100%);
+    opacity: 0.3; /* Always visible on mobile */
+    filter: blur(15px);
+    z-index: -1;
+    -webkit-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
+}
+
+.team-card:hover::before {
+    opacity: 1;
+}
+
+/* On desktop - hide glow by default */
+@media (min-width: 768px) {
+    .team-card::before {
+        opacity: 0;
+    }
+    .team-card:hover::before {
+        opacity: 1;
+    }
 }
 
 .team-card:hover {
@@ -1036,21 +1116,56 @@ button {
         inset 0 1px 0 rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2rem;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
     position: relative;
-    z-index: 1;
+    overflow: visible;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border-radius: 1.1rem;
+    opacity: 0.35; /* Always visible on mobile */
+    filter: blur(15px);
+    z-index: -1;
+    -webkit-transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
 }
 
 .service-card:hover {
     border-color: rgba(255, 255, 255, 0.2);
     box-shadow: 
-        0 16px 48px rgba(0, 0, 0, 0.4),
+        0 20px 50px rgba(0, 0, 0, 0.4),
         inset 0 1px 0 rgba(255, 255, 255, 0.15);
-    -webkit-transform: translateY(-4px);
-    -moz-transform: translateY(-4px);
-    transform: translateY(-4px);
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+/* Service card glow colors */
+.service-card:nth-child(1)::before { background: rgba(59, 130, 246, 0.4); }
+.service-card:nth-child(2)::before { background: rgba(34, 197, 94, 0.4); }
+.service-card:nth-child(3)::before { background: rgba(168, 85, 247, 0.4); }
+.service-card:nth-child(4)::before { background: rgba(249, 115, 22, 0.4); }
+
+/* On desktop - hide glow by default */
+@media (min-width: 768px) {
+    .service-card::before {
+        opacity: 0;
+    }
+    .service-card:hover::before {
+        opacity: 1;
+    }
 }
 
 .service-icon {

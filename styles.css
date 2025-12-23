@@ -221,9 +221,9 @@ button {
     position: fixed;
     bottom: 1.25rem;
     left: 50%;
-    -webkit-transform: translateX(-50%) translateY(20px);
-    -moz-transform: translateX(-50%) translateY(20px);
-    transform: translateX(-50%) translateY(20px);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
     pointer-events: none;
     z-index: 100;
     
@@ -244,16 +244,12 @@ button {
     
     /* Animation */
     opacity: 0;
-    -webkit-transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1);
-    -moz-transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1);
-    transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1), opacity 0.4s cubic-bezier(0.32, 0.72, 0, 1);
-    will-change: transform, opacity;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .tabbar.visible {
-    -webkit-transform: translateX(-50%) translateY(0);
-    -moz-transform: translateX(-50%) translateY(0);
-    transform: translateX(-50%) translateY(0);
     opacity: 1;
     pointer-events: auto;
 }
@@ -555,10 +551,37 @@ button {
 
 .section--dark {
     background-color: var(--gray-900);
+    position: relative;
+}
+
+.section--dark::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(ellipse 80% 50% at 20% 100%, rgba(0, 255, 255, 0.03) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 80% 0%, rgba(255, 0, 255, 0.03) 0%, transparent 50%);
+    pointer-events: none;
 }
 
 .section--medium {
     background-color: var(--gray-800);
+    position: relative;
+}
+
+.section--medium::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(ellipse 50% 50% at 50% 50%, rgba(138, 43, 226, 0.02) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .container {
@@ -620,19 +643,30 @@ button {
 }
 
 .project-card {
-    background: linear-gradient(135deg, var(--gray-800) 0%, var(--gray-900) 100%);
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.06) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+    );
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
     border-radius: 1.5rem;
-    border: 1px solid var(--gray-700);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     overflow: hidden;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .project-card:hover {
-    border-color: var(--apple-500);
+    border-color: rgba(255, 255, 255, 0.15);
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 
+        0 20px 50px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .project-card--leo {
@@ -868,10 +902,18 @@ button {
 }
 
 .team-card {
-    background-color: var(--gray-800);
-    border-radius: 0.75rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    border: 1px solid var(--gray-700);
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+    );
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     padding: 2rem;
     text-align: center;
     -webkit-transition: all 0.3s ease;
@@ -981,21 +1023,34 @@ button {
 }
 
 .service-card {
-    background-color: var(--gray-800);
-    border-radius: 0.75rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    border: 1px solid var(--gray-700);
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+    );
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 2rem;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .service-card:hover {
-    border-color: var(--apple-500);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 16px 48px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    transform: translateY(-4px);
 }
 
 .service-icon {
@@ -1052,10 +1107,28 @@ button {
 }
 
 .contact-card {
-    background-color: var(--gray-700);
-    border-radius: 0.5rem;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.06) 0%,
+        rgba(255, 255, 255, 0.02) 100%
+    );
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 
+        0 8px 24px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
     padding: 1.5rem;
     text-align: center;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    border-color: rgba(255, 255, 255, 0.15);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 .contact-card-title {

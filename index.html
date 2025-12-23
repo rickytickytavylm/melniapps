@@ -93,7 +93,7 @@
                 </div>
 
                 <!-- Fides et Ratio -->
-                <div class="project-card project-card--fides">
+                <div class="project-card project-card--fides" onclick="showReviewAlert(event)" style="cursor: pointer;">
                     <div class="project-card-inner">
                         <span class="project-badge">In Development</span>
                         <div class="project-icon">
@@ -109,7 +109,7 @@
                             <span class="project-tag">Radio Maria</span>
                             <span class="project-tag">Daily Prayers</span>
                         </div>
-                        <button type="button" class="project-link" onclick="showReviewAlert()">
+                        <button type="button" class="project-link" onclick="showReviewAlert(event)">
                             <svg class="project-link-icon" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                             </svg>
@@ -381,22 +381,40 @@
             });
         });
 
-        // Tabbar visibility on scroll
+        // Tabbar visibility on scroll - optimized
         var tabbar = document.getElementById('tabbar');
         var scrollThreshold = 100;
+        var ticking = false;
+        var isVisible = false;
         
-        function handleScroll() {
-            if (window.scrollY > scrollThreshold) {
-                tabbar.classList.add('visible');
-            } else {
-                tabbar.classList.remove('visible');
+        function updateTabbar() {
+            var shouldShow = window.scrollY > scrollThreshold;
+            if (shouldShow !== isVisible) {
+                isVisible = shouldShow;
+                if (shouldShow) {
+                    tabbar.classList.add('visible');
+                } else {
+                    tabbar.classList.remove('visible');
+                }
+            }
+            ticking = false;
+        }
+        
+        function onScroll() {
+            if (!ticking) {
+                requestAnimationFrame(updateTabbar);
+                ticking = true;
             }
         }
         
-        window.addEventListener('scroll', handleScroll, { passive: true });
+        window.addEventListener('scroll', onScroll, { passive: true });
         
         // Show review alert for Fides et Ratio
-        function showReviewAlert() {
+        function showReviewAlert(e) {
+            if (e) e.stopPropagation();
+            // Prevent multiple alerts
+            if (document.querySelector('.alert-overlay')) return;
+            
             var overlay = document.createElement('div');
             overlay.className = 'alert-overlay';
             overlay.innerHTML = '<div class="alert-modal">' +
@@ -411,8 +429,10 @@
         
         function closeAlert() {
             var overlay = document.querySelector('.alert-overlay');
-            overlay.classList.remove('visible');
-            setTimeout(function() { overlay.remove(); }, 300);
+            if (overlay) {
+                overlay.classList.remove('visible');
+                setTimeout(function() { overlay.remove(); }, 300);
+            }
         }
     </script>
 </body>

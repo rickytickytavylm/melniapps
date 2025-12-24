@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MELNI APPS — Студия приложений и дизайна</title>
+    <title>MELNI APPS</title>
     
-    <!-- Fonts -->
+    <!-- Fonts - preload for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="../styles.css">
@@ -47,9 +48,6 @@
             <h2 class="hero-title">
                 Создаём приложения, которые <span class="gradient-text">меняют жизни</span>
             </h2>
-            <p class="hero-subtitle">
-                Международная продуктовая компания с двумя флагманскими приложениями в App Store. Создаём цифровые продукты для миллионов пользователей.
-            </p>
             <a href="#contact" class="hero-btn">
                 Связаться
             </a>
@@ -102,7 +100,7 @@
                         <h4 class="project-title">Fides et Ratio</h4>
                         <p class="project-category">Вера и духовность</p>
                         <p class="project-desc">
-                            Ваш ежедневный духовный спутник. Молитвы, проповеди, Радио Мария, новости Церкви, ИИ для вопросов о вере и видео от священников — всё в одном приложении.
+                            Ваш ежедневный духовный спутник. Молитвы, проповеди, Радио Мария, новости Церкви, ИИ для вопросов о вере и видео от священников. Всё в одном приложении.
                         </p>
                         <div class="project-features">
                             <span class="project-tag">Fides AI</span>
@@ -126,10 +124,10 @@
         <div class="container text-center">
             <h3 class="section-title">О <span class="gradient-text">нас</span></h3>
             <p class="about-text">
-                MELNI APPS — международная продуктовая компания, создающая значимые мобильные приложения. Штаб-квартира в Армении, глобальный взгляд на рынок — мы создаём продукты, которые находят отклик у пользователей на всех континентах.
+                Международные цифровые продукты.
             </p>
             <p class="about-text">
-                Наше портфолио охватывает решения для ментального здоровья, духовные приложения и инновационные продукты на базе ИИ. Каждый запускаемый продукт создан, чтобы реально изменить повседневную жизнь людей по всему миру.
+                Технологично. Аккуратно. Качественно.
             </p>
         </div>
     </section>
@@ -138,9 +136,9 @@
     <section class="section section--dark">
         <div class="container container--wide">
             <div class="team-intro">
-                <h3 class="section-title section-title--lg">Наша <span class="gradient-text">команда</span></h3>
+                <h3 class="section-title section-title--lg"><span class="gradient-text">Ключевые фигуры</span></h3>
                 <p class="team-intro-text">
-                    Маленькая, но мощная. Техническое превосходство, дизайн-интуиция и продуктовое видение.
+                    Люди, стоящие за продуктами.
                 </p>
             </div>
             
@@ -169,7 +167,7 @@
                     <h5 class="team-name">Леонид Мельничук</h5>
                     <p class="team-role">Основатель & CTO</p>
                     <p class="team-bio">
-                        Движущая сила всего. Продуктовое видение, разработка, дизайн, интеграция ИИ — создаёт приложения с нуля до App Store.
+                        Движущая сила всего. Продуктовое видение, разработка, дизайн, интеграция ИИ. Создаёт приложения с нуля до App Store.
                     </p>
                 </div>
 
@@ -177,7 +175,7 @@
                 <div class="team-card">
                     <div class="team-avatar team-avatar--purple">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
                         </svg>
                     </div>
                     <h5 class="team-name">Мария Мельничук</h5>
@@ -249,7 +247,7 @@
                     </div>
                     <h4 class="service-title">Брендинг</h4>
                     <p class="service-desc">
-                        Айдентика с нуля. Логотип, иконки, система визуала.
+                        Айдентика с нуля. Полная визуальная система.
                     </p>
                 </div>
             </div>
@@ -296,42 +294,19 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container container--wide">
-            <div class="footer-grid">
-                <!-- Company Info -->
-                <div>
-                    <h3 class="footer-title gradient-text">MELNI APPS, LLC</h3>
-                    <div class="footer-info">
-                        <p><span class="footer-info-label">Телефон:</span> <a href="tel:+37493864503" class="contact-link">+374 93 864503</a></p>
-                        <p><span class="footer-info-label">Адрес:</span> кв. 204, ул. М. Хоренаци 26А</p>
-                        <p><span class="footer-info-label">Город:</span> Ереван, Армения</p>
-                    </div>
+    <footer class="footer footer--minimal">
+        <div class="container">
+            <div class="footer-minimal">
+                <div class="footer-brand">
+                    <span class="gradient-text">MELNI APPS</span>
                 </div>
-                
-                <!-- Quick Links -->
-                <div>
-                    <h4 class="footer-contact-title">Навигация</h4>
-                    <div class="footer-contact-list">
-                        <a href="#projects" class="footer-link">Наши проекты</a>
-                        <a href="#about" class="footer-link">О нас</a>
-                        <a href="#contact" class="footer-link">Контакты</a>
-                    </div>
+                <p class="footer-tagline">Создаём продукты, которые важны.</p>
+                <div class="footer-links-minimal">
+                    <a href="../company.html" class="footer-link">Компания</a>
+                    <a href="../privacy.html" class="footer-link">Приватность</a>
+                    <a href="../terms.html" class="footer-link">Условия</a>
                 </div>
-            </div>
-            
-            <hr class="footer-divider">
-            
-            <div class="footer-bottom">
-                <!-- Links -->
-                <div class="footer-links">
-                    <a href="../privacy.html" class="footer-link">Политика конфиденциальности</a>
-                    <a href="../terms.html" class="footer-link">Условия использования</a>
-                </div>
-                <!-- Copyright -->
-                <div class="footer-copyright">
-                    <p>© 2025 <span class="gradient-text">MELNI APPS, LLC</span></p>
-                </div>
+                <p class="footer-copyright-minimal">© 2025 MELNI APPS, LLC</p>
             </div>
         </div>
     </footer>
@@ -381,30 +356,30 @@
             });
         });
 
-        // Tabbar visibility on scroll - optimized
+        // Tabbar visibility on scroll - mobile optimized
         var tabbar = document.getElementById('tabbar');
-        var scrollThreshold = 100;
-        var ticking = false;
+        var scrollThreshold = 150;
         var isVisible = false;
+        var lastScrollY = 0;
+        var scrollTimeout = null;
         
         function updateTabbar() {
-            var shouldShow = window.scrollY > scrollThreshold;
+            var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+            var shouldShow = scrollY > scrollThreshold;
+            
             if (shouldShow !== isVisible) {
                 isVisible = shouldShow;
-                if (shouldShow) {
-                    tabbar.classList.add('visible');
-                } else {
-                    tabbar.classList.remove('visible');
-                }
+                tabbar.classList.toggle('visible', shouldShow);
             }
-            ticking = false;
+            lastScrollY = scrollY;
         }
         
         function onScroll() {
-            if (!ticking) {
+            if (scrollTimeout) return;
+            scrollTimeout = setTimeout(function() {
                 requestAnimationFrame(updateTabbar);
-                ticking = true;
-            }
+                scrollTimeout = null;
+            }, 16);
         }
         
         window.addEventListener('scroll', onScroll, { passive: true });
@@ -433,6 +408,21 @@
                 overlay.classList.remove('visible');
                 setTimeout(function() { overlay.remove(); }, 300);
             }
+        }
+        
+        // Garland animation for services section
+        var servicesGrid = document.querySelector('.services-grid');
+        if (servicesGrid && 'IntersectionObserver' in window) {
+            var garlandObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                        garlandObserver.unobserve(entry.target); // Run only once
+                    }
+                });
+            }, { threshold: 0.3 });
+            
+            garlandObserver.observe(servicesGrid);
         }
     </script>
 </body>

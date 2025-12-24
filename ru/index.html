@@ -356,33 +356,17 @@
             });
         });
 
-        // Tabbar visibility on scroll - mobile optimized
+        // Tabbar visibility on scroll - simplified
         var tabbar = document.getElementById('tabbar');
-        var scrollThreshold = 150;
         var isVisible = false;
-        var lastScrollY = 0;
-        var scrollTimeout = null;
         
-        function updateTabbar() {
-            var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-            var shouldShow = scrollY > scrollThreshold;
-            
+        window.addEventListener('scroll', function() {
+            var shouldShow = window.pageYOffset > 100;
             if (shouldShow !== isVisible) {
                 isVisible = shouldShow;
                 tabbar.classList.toggle('visible', shouldShow);
             }
-            lastScrollY = scrollY;
-        }
-        
-        function onScroll() {
-            if (scrollTimeout) return;
-            scrollTimeout = setTimeout(function() {
-                requestAnimationFrame(updateTabbar);
-                scrollTimeout = null;
-            }, 16);
-        }
-        
-        window.addEventListener('scroll', onScroll, { passive: true });
+        }, { passive: true });
         
         // Show review alert for Fides et Ratio
         function showReviewAlert(e) {

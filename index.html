@@ -89,15 +89,18 @@
                             App Store
                         </a>
                         <a href="https://www.producthunt.com/products/leo-recovery" target="_blank" class="product-hunt-link" onclick="event.stopPropagation()">
+                            <svg class="product-hunt-icon" viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                                <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/>
+                            </svg>
                             #9 on Product Hunt · Dec 2025
                         </a>
                     </div>
                 </div>
 
                 <!-- Fides et Ratio -->
-                <div class="project-card project-card--fides" onclick="showReviewAlert(event)" style="cursor: pointer;">
+                <div class="project-card project-card--fides" onclick="showComingSoonAlert(event)" style="cursor: pointer;">
                     <div class="project-card-inner">
-                        <span class="project-badge">In Development</span>
+                        <span class="project-badge project-badge--blue">Coming Soon</span>
                         <div class="project-icon">
                             <img src="newLogos.webp" alt="Fides et Ratio" class="project-app-icon">
                         </div>
@@ -111,12 +114,39 @@
                             <span class="project-tag">Radio Maria</span>
                             <span class="project-tag">Daily Prayers</span>
                         </div>
-                        <button type="button" class="project-link" onclick="showReviewAlert(event)">
+                        <button type="button" class="project-link" onclick="showComingSoonAlert(event)">
                             <svg class="project-link-icon" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                             </svg>
                             App Store
                         </button>
+                    </div>
+                </div>
+
+                <!-- PRISM -->
+                <div class="project-card project-card--prism" style="cursor: default;">
+                    <div class="project-card-inner">
+                        <span class="project-badge">In Development</span>
+                        <span class="project-badge project-badge--flagship">Flagship</span>
+                        <div class="project-icon">
+                            <img src="prism.jpeg" alt="PRISM" class="project-app-icon">
+                        </div>
+                        <h4 class="project-title">PRISM</h4>
+                        <p class="project-category">AI Search Engine</p>
+                        <p class="project-desc">
+                            Forget 10 tabs and endless scrolling. PRISM is a next-gen AI search engine: precise answers in 3 seconds with verified sources. No ads. No noise.
+                        </p>
+                        <div class="project-features">
+                            <span class="project-tag">AI Search</span>
+                            <span class="project-tag">Sources</span>
+                            <span class="project-tag">Ad-Free</span>
+                        </div>
+                        <span class="project-link project-link--disabled">
+                            <svg class="project-link-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            Coming Soon
+                        </span>
                     </div>
                 </div>
             </div>
@@ -372,8 +402,8 @@
             }
         }, { passive: true });
         
-        // Show review alert for Fides et Ratio
-        function showReviewAlert(e) {
+        // Show coming soon alert for Fides et Ratio (English version)
+        function showComingSoonAlert(e) {
             if (e) e.stopPropagation();
             // Prevent multiple alerts
             if (document.querySelector('.alert-overlay')) return;
@@ -381,9 +411,9 @@
             var overlay = document.createElement('div');
             overlay.className = 'alert-overlay';
             overlay.innerHTML = '<div class="alert-modal">' +
-                '<div class="alert-icon">⏳</div>' +
-                '<h3 class="alert-title">Under Review</h3>' +
-                '<p class="alert-text">Fides et Ratio is currently being reviewed by Apple. The app will be available on the App Store very soon!</p>' +
+                '<div class="alert-icon">🌍</div>' +
+                '<h3 class="alert-title">English Version Coming Soon</h3>' +
+                '<p class="alert-text">Fides et Ratio is currently available in Russian. The English version is in development and will be available soon!</p>' +
                 '<button class="alert-btn" onclick="closeAlert()">Got it</button>' +
                 '</div>';
             document.body.appendChild(overlay);

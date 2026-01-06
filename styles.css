@@ -753,6 +753,22 @@ button {
     background: linear-gradient(135deg, rgba(251, 191, 36, 0.08) 0%, var(--gray-900) 100%);
 }
 
+/* PRISM card */
+.project-card--prism {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.12) 0%, rgba(59, 130, 246, 0.08) 50%, var(--gray-900) 100%);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        0 0 40px rgba(139, 92, 246, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.project-card--prism:hover {
+    box-shadow: 
+        0 25px 60px rgba(0, 0, 0, 0.4),
+        0 0 60px rgba(139, 92, 246, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
 .project-card-inner {
     padding: 2rem;
 }
@@ -835,6 +851,12 @@ button.project-link {
     background: var(--gray-600);
 }
 
+.project-link--disabled {
+    cursor: default;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
 .project-link-icon {
     width: 1.25rem;
     height: 1.25rem;
@@ -867,19 +889,46 @@ button.project-link {
     border-color: rgba(255, 255, 255, 0.25);
 }
 
-/* Project Badge */
+.product-hunt-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    color: #fbbf24;
+}
+
+/* Project Badge - iOS 26 Liquid Glass */
 .project-badge {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    padding: 0.375rem 0.75rem;
-    background: linear-gradient(135deg, var(--orange-500), var(--orange-600));
-    color: var(--white);
-    font-size: 0.7rem;
+    padding: 0.4rem 0.875rem;
+    background: rgba(255, 255, 255, 0.12);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(20px) saturate(180%);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.65rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 2px 8px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Second badge - next to first one */
+.project-badge + .project-badge {
+    right: 9.5rem;
+}
+
+.project-badge--flagship {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.project-badge--blue {
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .project-card-inner {

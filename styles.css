@@ -558,6 +558,12 @@ button {
     color: var(--white);
 }
 
+/* Safety: never let an inline SVG fall back to its 300x150 default size */
+.content-zone svg {
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
 .content-zone .container {
     max-width: 80rem;
 }

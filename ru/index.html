@@ -9,8 +9,8 @@
     <!-- Fonts - preload for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="../styles.css">
@@ -55,294 +55,305 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section section--dark">
-        <div class="container container--wide">
-            <div class="text-center">
-                <h3 class="section-title section-title--lg">Наши <span class="gradient-text">проекты</span></h3>
-                <p class="section-subtitle">
-                    Наши флагманские продукты для миллионов пользователей по всему миру.
-                </p>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- Leo Recovery -->
-                <div class="project-card project-card--leo" onclick="window.open('https://leo-recovery.com', '_blank')" style="cursor: pointer;">
-                    <div class="project-card-inner">
-                        <div class="project-icon">
-                            <img src="../new_icon.jpg" alt="Leo Recovery" class="project-app-icon">
+    <main class="content-zone">
+
+        <!-- Stats -->
+        <section class="giga-stats">
+            <div class="container">
+                <div class="giga-stats-inner">
+                    <p class="giga-stats-intro">Международные цифровые продукты. Технологично, аккуратно, качественно.</p>
+                    <div class="giga-stats-metrics">
+                        <div class="giga-stat">
+                            <span class="giga-stat-divider" aria-hidden="true"></span>
+                            <div class="giga-stat-body">
+                                <p class="giga-stat-label">Продуктов</p>
+                                <p class="giga-stat-value">3+</p>
+                            </div>
                         </div>
-                        <h4 class="project-title">Leo Recovery</h4>
-                        <p class="project-category">Ментальное здоровье</p>
-                        <p class="project-desc">
-                            ИИ-помощник для преодоления зависимостей. 30+ глав теории, психологические инструменты, дневник эмоций и персональная поддержка для зависимых и их близких.
-                        </p>
-                        <div class="project-features">
-                            <span class="project-tag">ИИ-ассистент</span>
-                            <span class="project-tag">Self-help</span>
-                            <span class="project-tag">Дневник</span>
+                        <div class="giga-stat">
+                            <span class="giga-stat-divider" aria-hidden="true"></span>
+                            <div class="giga-stat-body">
+                                <p class="giga-stat-label">App Store</p>
+                                <p class="giga-stat-value">2</p>
+                            </div>
                         </div>
-                        <a href="https://apps.apple.com/ru/app/leo-recovery/id6752736987" target="_blank" class="project-link" onclick="event.stopPropagation()">
-                            <svg class="project-link-icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                            </svg>
-                            App Store
-                        </a>
-                        <a href="https://www.producthunt.com/products/leo-recovery" target="_blank" class="product-hunt-link" onclick="event.stopPropagation()">
-                            <svg class="product-hunt-icon" viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
-                                <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/>
-                            </svg>
-                            #9 в Product Hunt · Дек 2025
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Fides et Ratio -->
-                <div class="project-card project-card--fides" onclick="window.open('https://apps.apple.com/ru/app/fides-et-ratio/id6754965341', '_blank')" style="cursor: pointer;">
-                    <div class="project-card-inner">
-                        <div class="project-icon">
-                            <img src="../newLogos.webp" alt="Fides et Ratio" class="project-app-icon">
+                        <div class="giga-stat">
+                            <span class="giga-stat-divider" aria-hidden="true"></span>
+                            <div class="giga-stat-body">
+                                <p class="giga-stat-label">С ИИ</p>
+                                <p class="giga-stat-value">Все</p>
+                            </div>
                         </div>
-                        <h4 class="project-title">Fides et Ratio</h4>
-                        <p class="project-category">Вера и духовность</p>
-                        <p class="project-desc">
-                            Ваш ежедневный духовный спутник. Молитвы, проповеди, Радио Мария, новости Церкви, ИИ для вопросов о вере и видео от священников. Всё в одном приложении.
-                        </p>
-                        <div class="project-features">
-                            <span class="project-tag">Fides AI</span>
-                            <span class="project-tag">Радио Мария</span>
-                            <span class="project-tag">Молитвы</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="giga-section">
+            <div class="container">
+                <div class="giga-section-inner giga-section-head">
+                    <div class="giga-eyebrow">
+                        <span class="giga-eyebrow-dot" aria-hidden="true"></span>
+                        <span class="giga-eyebrow-text">Наши продукты</span>
+                    </div>
+                    <div class="giga-section-grid">
+                        <h2 class="giga-heading">Созданы, чтобы менять жизни</h2>
+                        <ul class="giga-features">
+                            <li class="giga-feature">
+                                <div class="giga-feature-icon" aria-hidden="true">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg>
+                                </div>
+                                <h3 class="giga-feature-title">ИИ в основе</h3>
+                                <p class="giga-feature-desc">Умные ассистенты, которые понимают контекст и дают реальную пользу.</p>
+                            </li>
+                            <li class="giga-feature">
+                                <div class="giga-feature-icon" aria-hidden="true">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                                </div>
+                                <h3 class="giga-feature-title">Нативные приложения</h3>
+                                <p class="giga-feature-desc">Продуманный iOS-опыт от прототипа до запуска в App Store.</p>
+                            </li>
+                            <li class="giga-feature">
+                                <div class="giga-feature-icon" aria-hidden="true">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+                                </div>
+                                <h3 class="giga-feature-title">Глобальный охват</h3>
+                                <p class="giga-feature-desc">Продукты для миллионов пользователей в разных языках и культурах.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="giga-section-inner giga-showcase">
+                    <div class="giga-showcase-panel">
+                        <div class="giga-showcase-header">
+                            <h3 class="giga-showcase-title">Наши проекты</h3>
+                            <p class="giga-showcase-desc">Флагманские продукты для миллионов пользователей по всему миру.</p>
                         </div>
-                        <a href="https://apps.apple.com/ru/app/fides-et-ratio/id6754965341" target="_blank" class="project-link" onclick="event.stopPropagation()">
-                            <svg class="project-link-icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                            </svg>
-                            App Store
-                        </a>
-                    </div>
-                </div>
 
-                <!-- PRISM -->
-                <div class="project-card project-card--prism" style="cursor: default;">
-                    <div class="project-card-inner">
-                        <span class="project-badge">В разработке</span>
-                        <span class="project-badge project-badge--flagship">Флагман</span>
-                        <div class="project-icon">
-                            <img src="../prism.jpeg" alt="PRISM" class="project-app-icon">
+                        <div class="giga-projects-grid">
+                            <!-- Leo Recovery -->
+                            <div class="giga-project-card giga-project-card--accent" onclick="window.open('https://leo-recovery.com', '_blank')">
+                                <a href="https://www.producthunt.com/products/leo-recovery" target="_blank" class="giga-ph-link" onclick="event.stopPropagation()">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
+                                    #9 Product Hunt
+                                </a>
+                                <div class="giga-project-icon">
+                                    <img src="../new_icon.jpg" alt="Leo Recovery">
+                                </div>
+                                <h4 class="giga-project-name">Leo Recovery</h4>
+                                <p class="giga-project-category">Ментальное здоровье</p>
+                                <p class="giga-project-desc">ИИ-помощник для преодоления зависимостей. 30+ глав, психологические инструменты, дневник эмоций и персональная поддержка.</p>
+                                <div class="giga-project-tags">
+                                    <span class="giga-project-tag">ИИ-ассистент</span>
+                                    <span class="giga-project-tag">Self-help</span>
+                                    <span class="giga-project-tag">Дневник</span>
+                                </div>
+                                <a href="https://apps.apple.com/ru/app/leo-recovery/id6752736987" target="_blank" class="giga-pill-btn" onclick="event.stopPropagation()">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                                    App Store
+                                </a>
+                            </div>
+
+                            <!-- Fides et Ratio -->
+                            <div class="giga-project-card" onclick="window.open('https://apps.apple.com/ru/app/fides-et-ratio/id6754965341', '_blank')">
+                                <div class="giga-project-icon">
+                                    <img src="../newLogos.webp" alt="Fides et Ratio">
+                                </div>
+                                <h4 class="giga-project-name">Fides et Ratio</h4>
+                                <p class="giga-project-category">Вера и духовность</p>
+                                <p class="giga-project-desc">Ежедневный духовный спутник. Молитвы, проповеди, Радио Мария, новости Церкви и ИИ для вопросов о вере.</p>
+                                <div class="giga-project-tags">
+                                    <span class="giga-project-tag">Fides AI</span>
+                                    <span class="giga-project-tag">Радио Мария</span>
+                                    <span class="giga-project-tag">Молитвы</span>
+                                </div>
+                                <a href="https://apps.apple.com/ru/app/fides-et-ratio/id6754965341" target="_blank" class="giga-pill-btn" onclick="event.stopPropagation()">
+                                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                                    App Store
+                                </a>
+                            </div>
+
+                            <!-- PRISM -->
+                            <div class="giga-project-card giga-project-card--static">
+                                <span class="giga-badge giga-badge--flagship">Флагман</span>
+                                <span class="giga-badge giga-badge--second">В разработке</span>
+                                <div class="giga-project-icon">
+                                    <img src="../prism.jpeg" alt="PRISM">
+                                </div>
+                                <h4 class="giga-project-name">PRISM</h4>
+                                <p class="giga-project-category">Поисковая нейросеть</p>
+                                <p class="giga-project-desc">AI-поиск нового поколения: точный ответ за 3 секунды с проверенными источниками. Без рекламы.</p>
+                                <div class="giga-project-tags">
+                                    <span class="giga-project-tag">AI Search</span>
+                                    <span class="giga-project-tag">Источники</span>
+                                    <span class="giga-project-tag">Без рекламы</span>
+                                </div>
+                                <span class="giga-pill-btn giga-pill-btn--disabled">Скоро</span>
+                            </div>
                         </div>
-                        <h4 class="project-title">PRISM</h4>
-                        <p class="project-category">Поисковая нейросеть</p>
-                        <p class="project-desc">
-                            Забудьте о 10 вкладках и бесконечном скролле. PRISM — AI-поисковик нового поколения: точный ответ за 3 секунды с проверенными источниками. Без рекламы. Без воды.
-                        </p>
-                        <div class="project-features">
-                            <span class="project-tag">AI Search</span>
-                            <span class="project-tag">Источники</span>
-                            <span class="project-tag">Без рекламы</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="giga-section">
+            <div class="container">
+                <div class="giga-section-inner giga-section-head">
+                    <div class="giga-eyebrow">
+                        <span class="giga-eyebrow-dot" aria-hidden="true"></span>
+                        <span class="giga-eyebrow-text">О нас</span>
+                    </div>
+                    <div class="giga-about">
+                        <h2 class="giga-heading giga-heading--lg">Цифровые продукты, которые важны</h2>
+                        <p class="giga-about-text">Международные цифровые продукты.</p>
+                        <p class="giga-about-text">Технологично. Аккуратно. Качественно.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="giga-section">
+            <div class="container">
+                <div class="giga-section-inner">
+                    <div class="giga-eyebrow">
+                        <span class="giga-eyebrow-dot" aria-hidden="true"></span>
+                        <span class="giga-eyebrow-text">Ключевые фигуры</span>
+                    </div>
+                    <h2 class="giga-heading" style="margin-top: 1rem;">Люди, стоящие за продуктами</h2>
+
+                    <div class="giga-team-grid">
+                        <div class="giga-team-card">
+                            <div class="giga-team-avatar">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                            </div>
+                            <h5 class="giga-team-name">Александр Мельничук</h5>
+                            <p class="giga-team-role">CEO & Продукт</p>
+                            <p class="giga-team-bio">Стратегическое видение и продуктовое лидерство. Гарантирует, что каждое приложение несёт реальную ценность.</p>
                         </div>
-                        <span class="project-link project-link--disabled">
-                            <svg class="project-link-icon" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                            </svg>
-                            Скоро
-                        </span>
+                        <div class="giga-team-card">
+                            <div class="giga-team-avatar">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                            </div>
+                            <h5 class="giga-team-name">Леонид Мельничук</h5>
+                            <p class="giga-team-role">Основатель & CTO</p>
+                            <p class="giga-team-bio">Движущая сила всего. Продуктовое видение, разработка, дизайн, интеграция ИИ.</p>
+                        </div>
+                        <div class="giga-team-card">
+                            <div class="giga-team-avatar">
+                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
+                            </div>
+                            <h5 class="giga-team-name">Мария Мельничук</h5>
+                            <p class="giga-team-role">Design Director</p>
+                            <p class="giga-team-bio">Душа и красота каждого интерфейса. Подход от пользователя с острым чувством эстетики.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="section section--medium">
-        <div class="container text-center">
-            <h3 class="section-title">О <span class="gradient-text">нас</span></h3>
-            <p class="about-text">
-                Международные цифровые продукты.
-            </p>
-            <p class="about-text">
-                Технологично. Аккуратно. Качественно.
-            </p>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="section section--dark">
-        <div class="container container--wide">
-            <div class="team-intro">
-                <h3 class="section-title section-title--lg"><span class="gradient-text">Ключевые фигуры</span></h3>
-                <p class="team-intro-text">
-                    Люди, стоящие за продуктами.
-                </p>
-            </div>
-            
-            <div class="team-grid">
-                <!-- Alexander Melnichuk -->
-                <div class="team-card">
-                    <div class="team-avatar team-avatar--blue">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                        </svg>
+        <!-- Services -->
+        <section class="giga-section">
+            <div class="container">
+                <div class="giga-section-inner giga-section-head">
+                    <div class="giga-eyebrow">
+                        <span class="giga-eyebrow-dot" aria-hidden="true"></span>
+                        <span class="giga-eyebrow-text">Что мы делаем</span>
                     </div>
-                    <h5 class="team-name">Александр Мельничук</h5>
-                    <p class="team-role">CEO & Продукт</p>
-                    <p class="team-bio">
-                        Стратегическое видение и продуктовое лидерство. Гарантирует, что каждое приложение несёт реальную ценность.
-                    </p>
-                </div>
-
-                <!-- Leonid Melnichuk -->
-                <div class="team-card team-card--founder">
-                    <div class="team-avatar team-avatar--green">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                        </svg>
+                    <div class="giga-section-grid">
+                        <h2 class="giga-heading">Полный цикл разработки</h2>
+                        <ul class="giga-features giga-features--4">
+                            <li class="giga-feature">
+                                <div class="giga-feature-icon" aria-hidden="true">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                                </div>
+                                <h3 class="giga-feature-title">Мобильные приложения</h3>
+                                <p class="giga-feature-desc">Нативные iOS и Android. От прототипа до глобального запуска.</p>
+                            </li>
+                            <li class="giga-feature">
+                                <div class="giga-feature-icon" aria-hidden="true">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                </div>
+                                <h3 class="giga-feature-title">Интеграция ИИ</h3>
+                                <p class="giga-feature-desc">Встроенный интеллект. Ассистенты, которые понимают контекст.</p>
+                            </li>
+                            <li class="giga-feature">
+                                <div class="giga-feature-icon" aria-hidden="true">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"/></svg>
+                                </div>
+                                <h3 class="giga-feature-title">UI/UX Дизайн</h3>
+                                <p class="giga-feature-desc">Чистые интерфейсы, интуитивные флоу.</p>
+                            </li>
+                            <li class="giga-feature">
+                                <div class="giga-feature-icon" aria-hidden="true">
+                                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
+                                </div>
+                                <h3 class="giga-feature-title">Брендинг</h3>
+                                <p class="giga-feature-desc">Айдентика с нуля. Полная визуальная система.</p>
+                            </li>
+                        </ul>
                     </div>
-                    <h5 class="team-name">Леонид Мельничук</h5>
-                    <p class="team-role">Основатель & CTO</p>
-                    <p class="team-bio">
-                        Движущая сила всего. Продуктовое видение, разработка, дизайн, интеграция ИИ. Создаёт приложения с нуля до App Store.
-                    </p>
-                </div>
-
-                <!-- Maria Melnichuk -->
-                <div class="team-card">
-                    <div class="team-avatar team-avatar--purple">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
-                        </svg>
-                    </div>
-                    <h5 class="team-name">Мария Мельничук</h5>
-                    <p class="team-role">Design Director</p>
-                    <p class="team-bio">
-                        Душа и красота каждого интерфейса. Подход от пользователя с острым чувством эстетики.
-                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section class="section section--dark">
-        <div class="container container--wide">
-            <div class="text-center">
-                <h3 class="section-title section-title--lg">Что мы <span class="gradient-text">делаем</span></h3>
-                <p class="section-subtitle">
-                    Полный цикл разработки продуктов и дизайн-услуги.
-                </p>
-            </div>
-            
-            <div class="services-grid">
-                <!-- Mobile Apps Card -->
-                <div class="service-card">
-                    <div class="service-icon service-icon--blue">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <h4 class="service-title">Мобильные приложения</h4>
-                    <p class="service-desc">
-                        Нативные iOS и Android. От первого прототипа до глобального запуска.
-                    </p>
-                </div>
+        <!-- Contact -->
+        <section id="contact" class="giga-section giga-cta-section">
+            <div class="container container--narrow">
+                <div class="giga-section-inner">
+                    <div class="giga-cta-panel">
+                        <div class="giga-eyebrow" style="justify-content: center;">
+                            <span class="giga-eyebrow-dot" aria-hidden="true"></span>
+                            <span class="giga-eyebrow-text">Связаться с нами</span>
+                        </div>
+                        <h2 class="giga-heading giga-heading--lg" style="margin-top: 1rem;">Готовы создать что-то важное?</h2>
+                        <p class="giga-cta-subtitle">Есть идея проекта? Давайте обсудим продукты, партнёрства или дизайн.</p>
+                        <a href="mailto:alex@melniapps.com" class="giga-pill-btn giga-pill-btn--primary">Написать нам</a>
 
-                <!-- AI Integration Card -->
-                <div class="service-card">
-                    <div class="service-icon service-icon--green">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                        </svg>
+                        <div class="giga-contact-grid">
+                            <div class="giga-contact-card">
+                                <h4 class="giga-contact-title">Бизнес</h4>
+                                <p class="giga-contact-desc">Проекты и партнёрства</p>
+                                <a href="mailto:alex@melniapps.com" class="giga-contact-email">alex@melniapps.com</a>
+                            </div>
+                            <div class="giga-contact-card">
+                                <h4 class="giga-contact-title">Дизайн</h4>
+                                <p class="giga-contact-desc">UI/UX и брендинг</p>
+                                <a href="mailto:sashaaaamyr@gmail.com" class="giga-contact-email">sashaaaamyr@gmail.com</a>
+                            </div>
+                            <div class="giga-contact-card">
+                                <h4 class="giga-contact-title">Разработка</h4>
+                                <p class="giga-contact-desc">Технические вопросы</p>
+                                <a href="mailto:rickytickytavy@gmail.com" class="giga-contact-email">rickytickytavy@gmail.com</a>
+                            </div>
+                        </div>
                     </div>
-                    <h4 class="service-title">Интеграция ИИ</h4>
-                    <p class="service-desc">
-                        Встроенный интеллект. Ассистенты, которые понимают контекст и дают реальную пользу.
-                    </p>
-                </div>
-
-                <!-- UI/UX Design Card -->
-                <div class="service-card">
-                    <div class="service-icon service-icon--purple">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
-                        </svg>
-                    </div>
-                    <h4 class="service-title">UI/UX Дизайн</h4>
-                    <p class="service-desc">
-                        Продуктовый дизайн, который работает. Чистые интерфейсы, интуитивные флоу.
-                    </p>
-                </div>
-
-                <!-- Branding Card -->
-                <div class="service-card">
-                    <div class="service-icon service-icon--orange">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
-                        </svg>
-                    </div>
-                    <h4 class="service-title">Брендинг</h4>
-                    <p class="service-desc">
-                        Айдентика с нуля. Полная визуальная система.
-                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section section--medium">
-        <div class="container text-center">
-            <h3 class="section-title">Связаться <span class="gradient-text">с нами</span></h3>
-            <p class="section-subtitle">
-                Есть идея проекта? Давайте обсудим.
-            </p>
-            
-            <div class="contact-grid">
-                <!-- Business -->
-                <div class="contact-card">
-                    <h4 class="contact-card-title">Бизнес</h4>
-                    <p class="contact-card-desc">Проекты и партнёрства</p>
-                    <a href="mailto:alex@melniapps.com" class="contact-link">
-                        alex@melniapps.com
-                    </a>
-                </div>
-                
-                <!-- Design -->
-                <div class="contact-card">
-                    <h4 class="contact-card-title">Дизайн</h4>
-                    <p class="contact-card-desc">UI/UX и брендинг</p>
-                    <a href="mailto:sashaaaamyr@gmail.com" class="contact-link">
-                        sashaaaamyr@gmail.com
-                    </a>
-                </div>
-                
-                <!-- Development -->
-                <div class="contact-card">
-                    <h4 class="contact-card-title">Разработка</h4>
-                    <p class="contact-card-desc">Технические вопросы</p>
-                    <a href="mailto:rickytickytavy@gmail.com" class="contact-link">
-                        rickytickytavy@gmail.com
-                    </a>
+        <!-- Footer -->
+        <footer class="footer footer--minimal">
+            <div class="container">
+                <div class="footer-minimal">
+                    <div class="footer-brand">
+                        <span class="gradient-text">MELNI APPS</span>
+                    </div>
+                    <p class="footer-tagline">Создаём продукты, которые важны.</p>
+                    <div class="footer-links-minimal">
+                        <a href="../company.html" class="footer-link">Компания</a>
+                        <a href="../privacy.html" class="footer-link">Приватность</a>
+                        <a href="../terms.html" class="footer-link">Условия</a>
+                    </div>
+                    <p class="footer-copyright-minimal">© 2025 MELNI APPS, LLC</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <!-- Footer -->
-    <footer class="footer footer--minimal">
-        <div class="container">
-            <div class="footer-minimal">
-                <div class="footer-brand">
-                    <span class="gradient-text">MELNI APPS</span>
-                </div>
-                <p class="footer-tagline">Создаём продукты, которые важны.</p>
-                <div class="footer-links-minimal">
-                    <a href="../company.html" class="footer-link">Компания</a>
-                    <a href="../privacy.html" class="footer-link">Приватность</a>
-                    <a href="../terms.html" class="footer-link">Условия</a>
-                </div>
-                <p class="footer-copyright-minimal">© 2025 MELNI APPS, LLC</p>
-            </div>
-        </div>
-    </footer>
+    </main>
 
     <!-- iOS 26 Liquid Glass Tabbar -->
     <nav class="tabbar" id="tabbar">
@@ -400,21 +411,6 @@
                 tabbar.classList.toggle('visible', shouldShow);
             }
         }, { passive: true });
-        
-        // Garland animation for services section
-        var servicesGrid = document.querySelector('.services-grid');
-        if (servicesGrid && 'IntersectionObserver' in window) {
-            var garlandObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate');
-                        garlandObserver.unobserve(entry.target); // Run only once
-                    }
-                });
-            }, { threshold: 0.3 });
-            
-            garlandObserver.observe(servicesGrid);
-        }
     </script>
 </body>
 </html>

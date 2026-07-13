@@ -34,6 +34,16 @@
     /* Fides et Ratio colors */
     --fides-primary: #fbbf24;
     --fides-secondary: #1e3a5f;
+
+    /* Giga-inspired content palette */
+    --onyx: #0f0d0d;
+    --charcoal: #171615;
+    --graphite: #262828;
+    --ash: #878686;
+    --fog: #939292;
+    --ember: #fe2c02;
+    --border-subtle: rgba(255, 255, 255, 0.1);
+    --text-muted: rgba(255, 255, 255, 0.5);
 }
 
 /* Reset & Base */
@@ -540,7 +550,732 @@ button {
 }
 
 /* ============================================
-   SECTIONS
+   CONTENT ZONE — Giga-inspired layout
+   Everything below the hero
+   ============================================ */
+.content-zone {
+    background: linear-gradient(180deg, #000000 0%, var(--onyx) 4%, var(--onyx) 100%);
+    color: var(--white);
+}
+
+.content-zone .container {
+    max-width: 80rem;
+}
+
+.content-zone .container--narrow {
+    max-width: 56rem;
+}
+
+/* Stats bar */
+.giga-stats {
+    padding: 1.25rem 0 4rem;
+}
+
+.giga-stats-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1.25rem 1rem;
+}
+
+@media (min-width: 810px) {
+    .giga-stats-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 1.5rem 2.75rem 1.5rem 2.75rem;
+        min-height: 9.5rem;
+    }
+}
+
+.giga-stats-intro {
+    max-width: 13.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+@media (min-width: 810px) {
+    .giga-stats-intro {
+        max-width: 21.25rem;
+    }
+}
+
+.giga-stats-metrics {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-shrink: 0;
+}
+
+@media (min-width: 810px) {
+    .giga-stats-metrics {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+
+.giga-stat {
+    display: flex;
+}
+
+@media (min-width: 810px) {
+    .giga-stat {
+        min-height: 9.5rem;
+    }
+}
+
+.giga-stat-divider {
+    display: none;
+    width: 1px;
+    flex-shrink: 0;
+    background: var(--border-subtle);
+}
+
+.giga-stat:not(:first-child) .giga-stat-divider {
+    display: block;
+}
+
+.giga-stat-body {
+    width: 12.5rem;
+    padding-left: 0.875rem;
+}
+
+.giga-stat-label {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.007em;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+.giga-stat-value {
+    margin-top: 0.625rem;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--white);
+}
+
+/* Section shell */
+.giga-section {
+    padding: 1.25rem 0 3.5rem;
+    position: relative;
+}
+
+.giga-section::after {
+    display: none;
+}
+
+.giga-section-inner {
+    padding: 0 1.25rem;
+}
+
+@media (min-width: 810px) {
+    .giga-section-inner {
+        padding: 0 2.75rem;
+    }
+}
+
+.giga-section-head {
+    padding-top: 1.25rem;
+    padding-bottom: 3.5rem;
+}
+
+@media (min-width: 1024px) {
+    .giga-section-head {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+    }
+}
+
+/* Eyebrow */
+.giga-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.giga-eyebrow-dot {
+    width: 0.375rem;
+    height: 0.375rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--ember);
+    animation: pulseDot 2s ease-out infinite;
+}
+
+.giga-eyebrow-text {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.6875rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    line-height: 2;
+    color: var(--white);
+}
+
+@keyframes pulseDot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(0.85); }
+}
+
+/* Display headings */
+.giga-heading {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 300;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: var(--white);
+}
+
+.giga-heading--lg {
+    font-size: clamp(2.25rem, 5.5vw, 3.75rem);
+    line-height: 1.2;
+}
+
+.giga-intro {
+    margin-top: 1rem;
+    max-width: 20rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+
+.giga-section-grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.75rem;
+    align-items: start;
+}
+
+@media (min-width: 810px) {
+    .giga-section-grid {
+        grid-template-columns: 1fr 2fr;
+        gap: 3rem;
+    }
+}
+
+.giga-section-grid .giga-heading {
+    max-width: 20rem;
+}
+
+/* Feature columns */
+.giga-features {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem 0;
+}
+
+@media (min-width: 810px) {
+    .giga-features {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
+    .giga-features--4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .giga-features--4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.giga-feature {
+    border-left: 1px solid var(--border-subtle);
+    padding-left: 1.5rem;
+}
+
+@media (min-width: 810px) {
+    .giga-feature {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .giga-feature:last-child {
+        padding-right: 0;
+    }
+}
+
+.giga-feature-icon {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.giga-feature-icon svg {
+    width: 1.125rem;
+    height: 1.125rem;
+}
+
+.giga-feature-title {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--white);
+}
+
+.giga-feature-desc {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+
+/* Showcase panel */
+.giga-showcase {
+    margin-top: 0;
+    padding-bottom: 3rem;
+}
+
+.giga-showcase-panel {
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 1px solid var(--border-subtle);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1.25rem;
+}
+
+@media (min-width: 810px) {
+    .giga-showcase-panel {
+        border-radius: 1rem;
+        padding: 1.5rem;
+    }
+}
+
+.giga-showcase-header {
+    margin-bottom: 2rem;
+}
+
+.giga-showcase-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 1.33;
+    background: linear-gradient(90deg, rgba(90, 200, 250, 0.9) -10%, #ffffff 40%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.giga-showcase-desc {
+    margin-top: 0.625rem;
+    max-width: 20rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+
+/* Project cards — Giga style */
+.giga-projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .giga-projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .giga-projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.giga-project-card {
+    position: relative;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-subtle);
+    background: var(--charcoal);
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.giga-project-card:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    background: var(--graphite);
+}
+
+.giga-project-card--static {
+    cursor: default;
+}
+
+.giga-project-card--static:hover {
+    border-color: var(--border-subtle);
+    background: var(--charcoal);
+}
+
+.giga-project-card--accent {
+    border-color: rgba(254, 44, 2, 0.25);
+}
+
+.giga-project-card--accent:hover {
+    border-color: rgba(254, 44, 2, 0.4);
+}
+
+.giga-project-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+    background: var(--graphite);
+}
+
+.giga-project-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.giga-project-name {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 0.25rem;
+}
+
+.giga-project-category {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ash);
+    margin-bottom: 0.875rem;
+}
+
+.giga-project-desc {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+}
+
+.giga-project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-bottom: 1.25rem;
+}
+
+.giga-project-tag {
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    border: 1px solid var(--border-subtle);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    color: var(--fog);
+}
+
+.giga-pill-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5625rem 1.25rem;
+    border-radius: 9999px;
+    border: 1px solid var(--border-subtle);
+    background: var(--charcoal);
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.giga-pill-btn:hover {
+    background: var(--graphite);
+    border-color: rgba(255, 255, 255, 0.18);
+}
+
+.giga-pill-btn--primary {
+    background: var(--white);
+    color: var(--onyx);
+    border-color: transparent;
+}
+
+.giga-pill-btn--primary:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.giga-pill-btn--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+}
+
+.giga-pill-btn svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.giga-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 9999px;
+    border: 1px solid var(--border-subtle);
+    background: rgba(255, 255, 255, 0.06);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.625rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.giga-badge + .giga-badge {
+    right: auto;
+    left: 1rem;
+    top: 3rem;
+}
+
+.giga-badge--flagship {
+    top: 1rem;
+    left: auto;
+    right: 1rem;
+}
+
+.giga-badge--second {
+    top: 3.25rem;
+    right: 1rem;
+}
+
+.giga-ph-link {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 9999px;
+    border: 1px solid var(--border-subtle);
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 0.6875rem;
+    color: var(--white);
+    transition: background-color 0.2s ease;
+}
+
+.giga-ph-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.giga-ph-link svg {
+    width: 0.875rem;
+    height: 0.875rem;
+    color: #fbbf24;
+}
+
+/* About block */
+.giga-about {
+    text-align: left;
+    max-width: 36rem;
+}
+
+.giga-about-text {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--text-muted);
+}
+
+.giga-about-text + .giga-about-text {
+    margin-top: 0.75rem;
+}
+
+/* Team */
+.giga-team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .giga-team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.giga-team-card {
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-subtle);
+    background: var(--charcoal);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: border-color 0.25s ease;
+}
+
+.giga-team-card:hover {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.giga-team-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    background: var(--graphite);
+    color: var(--white);
+}
+
+.giga-team-avatar svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.giga-team-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 0.375rem;
+}
+
+.giga-team-role {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ash);
+    margin-bottom: 0.875rem;
+}
+
+.giga-team-bio {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+/* Contact / CTA */
+.giga-cta-section {
+    padding-bottom: 5rem;
+}
+
+.giga-cta-panel {
+    border-radius: 1rem;
+    border: 1px solid var(--border-subtle);
+    background: var(--charcoal);
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .giga-cta-panel {
+        padding: 4rem 3rem;
+    }
+}
+
+.giga-cta-panel .giga-heading {
+    max-width: 28rem;
+    margin: 0 auto;
+}
+
+.giga-cta-subtitle {
+    margin: 1rem auto 2rem;
+    max-width: 32rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.giga-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .giga-contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.giga-contact-card {
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-subtle);
+    background: var(--onyx);
+    padding: 1.5rem;
+    transition: border-color 0.25s ease;
+}
+
+.giga-contact-card:hover {
+    border-color: rgba(255, 255, 255, 0.16);
+}
+
+.giga-contact-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 0.375rem;
+}
+
+.giga-contact-desc {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    margin-bottom: 0.875rem;
+}
+
+.giga-contact-email {
+    font-size: 0.875rem;
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+    transition: text-decoration-color 0.2s ease;
+}
+
+.giga-contact-email:hover {
+    text-decoration-color: var(--white);
+}
+
+/* Footer in content zone */
+.content-zone .footer {
+    background: #000000;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.content-zone .footer-brand .gradient-text,
+.content-zone .footer-tagline,
+.content-zone .footer-link,
+.content-zone .footer-copyright-minimal {
+    color: var(--ash);
+}
+
+.content-zone .footer-brand .gradient-text {
+    background: none;
+    -webkit-text-fill-color: var(--white);
+    color: var(--white);
+}
+
+.content-zone .footer-link:hover {
+    color: var(--white);
+}
+
+/* ============================================
+   SECTIONS (legacy — subpages)
    ============================================ */
 .section {
     padding: 5rem 0;

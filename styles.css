@@ -1090,6 +1090,102 @@ button {
     color: #fbbf24;
 }
 
+/* Outsource — client project spotlight */
+.giga-outsource-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.giga-spotlight {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 1px solid var(--border-subtle);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    gap: 1.25rem;
+}
+
+@media (min-width: 810px) {
+    .giga-spotlight {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 2rem;
+        padding: 1.5rem;
+    }
+}
+
+.giga-spotlight-media {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    background: var(--graphite);
+}
+
+@media (min-width: 810px) {
+    .giga-spotlight-media {
+        width: 56%;
+        flex-shrink: 0;
+    }
+}
+
+.giga-spotlight-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.giga-spotlight-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0.75rem 0.5rem 0.5rem;
+    flex: 1;
+}
+
+@media (min-width: 810px) {
+    .giga-spotlight-body {
+        padding: 1.5rem 1.5rem 1.5rem 0;
+    }
+}
+
+.giga-spotlight-category {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.6875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ash);
+    margin-bottom: 0.875rem;
+}
+
+.giga-spotlight-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 300;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.giga-spotlight-desc {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+    margin-bottom: 1.25rem;
+    max-width: 34rem;
+}
+
+.giga-spotlight .giga-project-tags {
+    margin-bottom: 1.5rem;
+}
+
 /* About block */
 .giga-about {
     text-align: left;

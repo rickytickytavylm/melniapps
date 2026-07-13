@@ -1217,6 +1217,13 @@ button {
     .giga-contact-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .giga-contact-grid--two {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .giga-contact-card {

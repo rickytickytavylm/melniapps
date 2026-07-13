@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="../styles.css?v=5">
+    <link rel="stylesheet" href="../styles.css?v=6">
 </head>
 <body>
     
@@ -94,57 +94,53 @@
                     </div>
                 </div>
 
-                <div class="giga-section-inner giga-showcase">
-                    <div class="giga-showcase-panel">
-                        <div class="giga-showcase-header">
-                            <h3 class="giga-showcase-title">Наши проекты</h3>
-                            <p class="giga-showcase-desc">Флагманские продукты для миллионов пользователей по всему миру.</p>
-                        </div>
-
-                        <div class="giga-projects-grid">
-                            <!-- Leo Recovery -->
-                            <div class="giga-project-card giga-project-card--accent" onclick="window.open('https://leo-recovery.com', '_blank')">
-                                <a href="https://www.producthunt.com/products/leo-recovery" target="_blank" class="giga-ph-link" onclick="event.stopPropagation()">
+                <div class="giga-section-inner">
+                    <div class="giga-outsource-list">
+                        <!-- Leo Recovery -->
+                        <article class="giga-spotlight">
+                            <div class="giga-spotlight-media giga-spotlight-media--icon giga-spotlight-media--leo">
+                                <a href="https://www.producthunt.com/products/leo-recovery" target="_blank" rel="noopener" class="giga-spotlight-badge">
                                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg>
                                     #9 Product Hunt
                                 </a>
-                                <div class="giga-project-icon">
-                                    <img src="../new_icon.jpg" alt="Leo Recovery">
-                                </div>
-                                <h4 class="giga-project-name">Leo Recovery</h4>
-                                <p class="giga-project-category">Ментальное здоровье</p>
-                                <p class="giga-project-desc">ИИ-помощник для преодоления зависимостей. 30+ глав, психологические инструменты, дневник эмоций и персональная поддержка.</p>
+                                <img src="../new_icon.jpg" alt="Leo Recovery">
+                            </div>
+                            <div class="giga-spotlight-body">
+                                <p class="giga-spotlight-category">Наше приложение · Ментальное здоровье</p>
+                                <h3 class="giga-spotlight-title">Leo Recovery</h3>
+                                <p class="giga-spotlight-desc">ИИ-помощник для преодоления зависимостей. 30+ глав теории, психологические инструменты, дневник эмоций и персональная ИИ-поддержка для зависимых и их близких.</p>
                                 <div class="giga-project-tags">
                                     <span class="giga-project-tag">ИИ-ассистент</span>
                                     <span class="giga-project-tag">Self-help</span>
                                     <span class="giga-project-tag">Дневник</span>
                                 </div>
-                                <a href="https://apps.apple.com/ru/app/leo-recovery/id6752736987" target="_blank" class="giga-pill-btn" onclick="event.stopPropagation()">
+                                <a href="https://apps.apple.com/ru/app/leo-recovery/id6752736987" target="_blank" rel="noopener" class="giga-pill-btn">
                                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                                     App Store
                                 </a>
                             </div>
+                        </article>
 
-                            <!-- Fides et Ratio -->
-                            <div class="giga-project-card" onclick="window.open('https://apps.apple.com/ru/app/fides-et-ratio/id6754965341', '_blank')">
-                                <div class="giga-project-icon">
-                                    <img src="../newLogos.webp" alt="Fides et Ratio">
-                                </div>
-                                <h4 class="giga-project-name">Fides et Ratio</h4>
-                                <p class="giga-project-category">Вера и духовность</p>
-                                <p class="giga-project-desc">Ежедневный духовный спутник. Молитвы, проповеди, Радио Мария, новости Церкви и ИИ для вопросов о вере.</p>
+                        <!-- Fides et Ratio -->
+                        <article class="giga-spotlight giga-spotlight--reverse">
+                            <div class="giga-spotlight-media giga-spotlight-media--icon giga-spotlight-media--fides">
+                                <img src="../newLogos.webp" alt="Fides et Ratio">
+                            </div>
+                            <div class="giga-spotlight-body">
+                                <p class="giga-spotlight-category">Наше приложение · Вера и духовность</p>
+                                <h3 class="giga-spotlight-title">Fides et Ratio</h3>
+                                <p class="giga-spotlight-desc">Ваш ежедневный духовный спутник. Молитвы, проповеди, Радио Мария, новости Церкви, ИИ для вопросов о вере и видео от священников — всё в одном приложении.</p>
                                 <div class="giga-project-tags">
                                     <span class="giga-project-tag">Fides AI</span>
                                     <span class="giga-project-tag">Радио Мария</span>
                                     <span class="giga-project-tag">Молитвы</span>
                                 </div>
-                                <a href="https://apps.apple.com/ru/app/fides-et-ratio/id6754965341" target="_blank" class="giga-pill-btn" onclick="event.stopPropagation()">
+                                <a href="https://apps.apple.com/ru/app/fides-et-ratio/id6754965341" target="_blank" rel="noopener" class="giga-pill-btn">
                                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                                     App Store
                                 </a>
                             </div>
-
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>

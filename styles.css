@@ -1186,6 +1186,79 @@ button {
     margin-bottom: 1.5rem;
 }
 
+@media (min-width: 810px) {
+    .giga-spotlight--reverse {
+        flex-direction: row-reverse;
+    }
+
+    .giga-spotlight--reverse .giga-spotlight-body {
+        padding: 1.5rem 0 1.5rem 1.5rem;
+    }
+}
+
+/* Icon-based media (own apps) */
+.giga-spotlight-media--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 15rem;
+    padding: 2.5rem;
+}
+
+@media (min-width: 810px) {
+    .giga-spotlight-media--icon {
+        min-height: 20rem;
+    }
+}
+
+.giga-spotlight-media--icon img {
+    width: auto;
+    height: auto;
+    max-width: 9rem;
+    max-height: 9rem;
+    border-radius: 1.75rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.giga-spotlight-media--leo {
+    background:
+        radial-gradient(ellipse 70% 70% at 50% 40%, rgba(125, 211, 252, 0.25) 0%, transparent 70%),
+        var(--charcoal);
+}
+
+.giga-spotlight-media--fides {
+    background:
+        radial-gradient(ellipse 70% 70% at 50% 40%, rgba(251, 191, 36, 0.2) 0%, transparent 70%),
+        var(--charcoal);
+}
+
+.giga-spotlight-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.75rem;
+    border-radius: 9999px;
+    border: 1px solid var(--border-subtle);
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.625rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.giga-spotlight-badge svg {
+    width: 0.875rem;
+    height: 0.875rem;
+    color: #fbbf24;
+}
+
 /* About block */
 .giga-about {
     text-align: left;

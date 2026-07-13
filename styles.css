@@ -137,16 +137,20 @@ button {
     flex-shrink: 0;
 }
 
-.logo h1 {
+.logo h1,
+.logo .logo-title {
     font-size: 0.8125rem;
     font-weight: 600;
     letter-spacing: 0.02em;
     margin: 0;
     text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
 }
 
 @media (min-width: 768px) {
-    .logo h1 {
+    .logo h1,
+    .logo .logo-title {
         font-size: 0.9375rem;
     }
 }

@@ -62,7 +62,20 @@
 
   <url>
     <loc>https://melniapps.com/privacy.html</loc>
-    <lastmod>2026-07-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://melniapps.com/privacy.html"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://melniapps.com/ru/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://melniapps.com/privacy.html"/>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

@@ -2504,6 +2504,71 @@ button.project-link {
     color: var(--gray-400);
 }
 
+/* Account deletion page */
+.delete-page {
+    padding-top: 6.5rem;
+    padding-bottom: 4rem;
+}
+
+.delete-page .giga-heading {
+    margin-top: 1rem;
+    max-width: 18rem;
+}
+
+.delete-lead {
+    margin-top: 1.25rem;
+    max-width: 36rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+.delete-block {
+    margin-top: 2.5rem;
+    max-width: 36rem;
+}
+
+.delete-block h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+}
+
+.delete-block p,
+.delete-block li {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+    color: var(--fog);
+}
+
+.delete-list {
+    margin: 0;
+    padding-left: 1.15rem;
+}
+
+.delete-list li + li {
+    margin-top: 0.35rem;
+}
+
+.delete-page .giga-pill-btn {
+    margin-top: 1.25rem;
+}
+
+.delete-mail {
+    margin-top: 0.85rem;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.75rem;
+    color: var(--ash);
+}
+
+.delete-mail a {
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
 /* ============================================
    RESPONSIVE DESIGN
    ============================================ */

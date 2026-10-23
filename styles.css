@@ -3251,3 +3251,413 @@ button.project-link {
     }
 }
 
+/* Editorial homepage and case studies. Scoped so legal pages stay as they are. */
+.edit {
+    background: #000;
+    color: #fff;
+}
+
+.edit-wrap {
+    width: min(1280px, calc(100% - 2.5rem));
+    margin: 0 auto;
+}
+
+.edit-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 7.5rem 0 4.5rem;
+    background: #000;
+    scroll-margin-top: 5rem;
+}
+
+.edit-eyebrow {
+    margin: 0;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.edit-hero h1,
+.edit-display {
+    margin: 0.8rem 0 0;
+    max-width: 11ch;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(3.4rem, 8vw, 7.4rem);
+    line-height: 0.9;
+    letter-spacing: -0.035em;
+}
+
+.edit-lede {
+    max-width: 36rem;
+    margin: 1.5rem 0 0;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.5;
+}
+
+.edit-cta {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    margin-top: 2rem;
+    padding: 0 1.15rem;
+    border-radius: 999px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.edit-cta:hover {
+    background: #f2f2f2;
+}
+
+.edit-section {
+    padding: 5.5rem 0;
+    scroll-margin-top: 5rem;
+}
+
+.edit h2 {
+    margin: 0.7rem 0 0;
+    max-width: 16ch;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2.4rem, 5vw, 4.6rem);
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+}
+
+.edit-work {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.edit-piece {
+    display: grid;
+    gap: 1rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.edit-piece figure {
+    margin: 0;
+    overflow: hidden;
+    background: #111;
+    border-radius: 1.25rem;
+}
+
+.edit-piece img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.edit-piece--icon img {
+    width: 8.5rem;
+    height: 8.5rem;
+    margin: 3.5rem auto;
+    border-radius: 1.6rem;
+    object-fit: cover;
+}
+
+.edit-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.85rem;
+    color: rgba(255, 255, 255, 0.48);
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.edit-piece h3 {
+    margin: 0.35rem 0 0;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    letter-spacing: -0.03em;
+    font-weight: 500;
+}
+
+.edit-piece p {
+    margin: 0.45rem 0 0;
+    max-width: 42rem;
+    color: rgba(255, 255, 255, 0.66);
+    line-height: 1.5;
+}
+
+.edit-system {
+    margin: 2.5rem 0 0;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.edit-system li {
+    display: grid;
+    gap: 0.35rem;
+    padding: 1.4rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.edit-system strong {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: var(--ember);
+}
+
+.edit-system h3 {
+    margin: 0;
+    font-size: 1.55rem;
+    letter-spacing: -0.03em;
+}
+
+.edit-system p,
+.edit-steps p,
+.edit-about p,
+.edit-contact p {
+    margin: 0.35rem 0 0;
+    color: rgba(255, 255, 255, 0.66);
+    line-height: 1.5;
+}
+
+.edit-steps {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2.5rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.edit-steps li {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.edit-steps span {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.edit-steps h3 {
+    margin: 0.4rem 0 0;
+    font-size: 1.35rem;
+}
+
+.edit-about {
+    display: grid;
+    gap: 1.5rem;
+    align-items: end;
+}
+
+.edit-about img {
+    width: min(100%, 22rem);
+    height: auto;
+    border-radius: 1.25rem;
+    object-fit: cover;
+    object-position: center 15%;
+}
+
+.edit-contact {
+    padding-bottom: 2rem;
+}
+
+.edit-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.edit-links a,
+.case-links a,
+.case-next a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.edit-foot {
+    padding: 1rem 0 6.5rem;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.85rem;
+}
+
+.edit-foot a {
+    color: rgba(255, 255, 255, 0.72);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.case {
+    background: #000;
+    color: #fff;
+    padding-top: 6.5rem;
+}
+
+.case-wrap {
+    width: min(1100px, calc(100% - 2.5rem));
+    margin: 0 auto;
+}
+
+.case-hero {
+    padding-bottom: 2rem;
+}
+
+.case-hero h1 {
+    margin: 0.8rem 0 0;
+    max-width: 14ch;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2.8rem, 7vw, 5.8rem);
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+}
+
+.case-hero figure {
+    margin: 2rem 0 0;
+}
+
+.case-hero img,
+.case-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+    background: #111;
+}
+
+.case-icon {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+    background: #111;
+    border-radius: 1.25rem;
+}
+
+.case-icon img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1.6rem;
+    object-fit: cover;
+}
+
+.case-note {
+    margin: 0.7rem 0 0;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.85rem;
+}
+
+.case-facts {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.case-facts div {
+    margin: 0;
+}
+
+.case-facts dt {
+    color: rgba(255, 255, 255, 0.42);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.case-facts dd {
+    margin: 0.3rem 0 0;
+}
+
+.case-block {
+    padding: 3rem 0;
+}
+
+.case-block h2,
+.case-next h2 {
+    margin: 0;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    letter-spacing: -0.03em;
+}
+
+.case-block p,
+.case-block li {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+.case-block ul {
+    margin: 1rem 0 0;
+    padding-left: 1.1rem;
+}
+
+.case-next {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem 0 6rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.case-next a {
+    font-size: 1.15rem;
+}
+
+@media (min-width: 768px) {
+    .edit-wrap,
+    .case-wrap {
+        width: min(1280px, calc(100% - 4rem));
+    }
+
+    .edit-split {
+        grid-template-columns: 1.15fr 0.85fr;
+    }
+
+    .edit-split--flip {
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+
+    .edit-system li {
+        grid-template-columns: 4rem 16rem 1fr;
+        align-items: baseline;
+        gap: 1.5rem;
+    }
+
+    .edit-steps {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .edit-about {
+        grid-template-columns: 0.8fr 1.2fr;
+    }
+
+    .case-facts {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .edit-hero {
+        padding-bottom: 6rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .edit-wrap,
+    .case-wrap {
+        width: min(100% - 2.5rem, 1280px);
+    }
+}
+

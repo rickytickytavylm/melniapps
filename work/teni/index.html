@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teni Championship | MELNI APPS</title>
+    <meta name="description" content="A digital platform connecting the public-facing championship experience with the tools used to manage it.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://melniapps.com/work/teni/">
+    <link rel="alternate" hreflang="en" href="https://melniapps.com/work/teni/">
+    <link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/teni/">
+    <link rel="alternate" hreflang="x-default" href="https://melniapps.com/work/teni/">
+    <meta property="og:title" content="Teni Championship | MELNI APPS">
+    <meta property="og:description" content="A digital platform connecting the public-facing championship experience with the tools used to manage it.">
+    <meta property="og:url" content="https://melniapps.com/work/teni/">
+    <meta property="og:image" content="https://melniapps.com/og.jpg">
+    <link rel="icon" type="image/jpeg" href="../../fav.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css?v=11">
+    <script src="../../lang.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-inner">
+                <div class="logo">
+                    <a href="../../index.html" class="logo-title gradient-text">MELNI APPS</a>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-links-inner">
+                        <a href="../../index.html#work" class="nav-link">All work</a>
+                        <a href="../../index.html#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="lang-switcher">
+                    <a href="./" class="lang-btn lang-btn--active">EN</a>
+                    <a href="../../ru/work/teni/" class="lang-btn">RU</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="case">
+        <article class="case-wrap">
+            <header class="case-hero">
+                <p class="edit-eyebrow">Teni Championship</p>
+                <h1>Beyond the event website.</h1>
+                <p class="edit-lede">A digital platform connecting the public-facing championship experience with the tools used to manage it.</p>
+                <div class="edit-links case-links"><a href="https://чемпионат-тень.рф" target="_blank" rel="noopener">Open the product</a></div>
+                <figure><img src="../../teni.webp" alt="Teni Championship" width="1280" height="720"></figure>
+                <p class="case-note">CRM screens are not published on this page.</p>
+            </header>
+            <section class="case-block" aria-label="Overview">
+                <dl class="case-facts">
+                    <div><dt>Product type</dt><dd>Event platform</dd></div>
+                    <div><dt>Platform</dt><dd>Web</dd></div>
+                    <div><dt>Role</dt><dd>Product engineering</dd></div>
+                    <div><dt>Technologies</dt><dd>Public site, applications, CRM, backend</dd></div>
+                </dl>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Challenge</h2>
+                <p>The championship needed a public face and a way to take applications and work with the data, not only a landing page.</p>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Experience</h2>
+                <ul><li>Read the event, the schedule, and the categories.</li><li>Submit an application.</li><li>Work with applications on the inside of the system.</li></ul>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Engineering</h2>
+                <p>The public site, application flow, CRM, and backend that hold the championship data.</p>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Delivery</h2>
+                <p>The public site is live. The internal tools are part of the same build and are not shown here.</p>
+            </section>
+            <nav class="case-next" aria-label="Next">
+                <a href="../../index.html#work">All work</a>
+                <a href="../vostok-factory/">Next: Vostok Factory</a>
+            </nav>
+        </article>
+    </main>
+    <script>
+        var nodes = document.querySelectorAll('.folio-reveal');
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            nodes.forEach(function (node) { observer.observe(node); });
+        }
+    </script>
+</body>
+</html>

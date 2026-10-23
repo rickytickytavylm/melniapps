@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лоза | MELNI APPS</title>
+    <meta name="description" content="Цифровое пространство, где вместе живут общение, учебный контент, медиа и участие.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://melniapps.com/ru/work/loza/">
+    <link rel="alternate" hreflang="en" href="https://melniapps.com/work/loza/">
+    <link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/loza/">
+    <link rel="alternate" hreflang="x-default" href="https://melniapps.com/work/loza/">
+    <meta property="og:title" content="Лоза | MELNI APPS">
+    <meta property="og:description" content="Цифровое пространство, где вместе живут общение, учебный контент, медиа и участие.">
+    <meta property="og:url" content="https://melniapps.com/ru/work/loza/">
+    <meta property="og:image" content="https://melniapps.com/og.jpg">
+    <link rel="icon" type="image/jpeg" href="../../../fav.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css?v=11">
+    <script src="../../../lang.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-inner">
+                <div class="logo">
+                    <a href="../../index.html" class="logo-title gradient-text">MELNI APPS</a>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-links-inner">
+                        <a href="../../index.html#work" class="nav-link">Все работы</a>
+                        <a href="../../index.html#contact" class="nav-link">Контакт</a>
+                    </div>
+                </div>
+                <div class="lang-switcher">
+                    <a href="../../../work/loza/" class="lang-btn">EN</a>
+                    <a href="./" class="lang-btn lang-btn--active">RU</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="case">
+        <article class="case-wrap">
+            <header class="case-hero">
+                <p class="edit-eyebrow">Лоза</p>
+                <h1>Сообщество как продукт.</h1>
+                <p class="edit-lede">Цифровое пространство, где вместе живут общение, учебный контент, медиа и участие.</p>
+                <div class="edit-links case-links"><a href="https://lozapsy.help/" target="_blank" rel="noopener">Открыть продукт</a></div>
+                <figure><img src="../../../loza.webp" alt="Лоза" width="1280" height="720"></figure>
+                <p class="case-note">Внутренние экраны медиатеки и CRM на этой странице не публикуются.</p>
+            </header>
+            <section class="case-block" aria-label="Обзор">
+                <dl class="case-facts">
+                    <div><dt>Тип продукта</dt><dd>Веб-платформа</dd></div>
+                    <div><dt>Платформа</dt><dd>Веб</dd></div>
+                    <div><dt>Роль</dt><dd>Продуктовая инженерия</dd></div>
+                    <div><dt>Технологии</dt><dd>Авторизация, участие, доставка контента, backend</dd></div>
+                </dl>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Задача</h2>
+                <p>Родителям нужно одно место для материалов, медиа и разговора, а не набор отдельных инструментов.</p>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Опыт</h2>
+                <ul><li>Открыть медиатеку и ленту.</li><li>Пользоваться аккаунтом и оставаться в сообществе.</li><li>Общаться с другими родителями и пользоваться AI внутри продукта.</li></ul>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Инженерия</h2>
+                <p>Авторизация, логика участия, доставка контента, backend и CRM для работы сообщества.</p>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Запуск</h2>
+                <p>Платформа открыта на lozapsy.help.</p>
+            </section>
+            <nav class="case-next" aria-label="Дальше">
+                <a href="../../index.html#work">Все работы</a>
+                <a href="../leo-recovery/">Дальше: Leo Recovery</a>
+            </nav>
+        </article>
+    </main>
+    <script>
+        var nodes = document.querySelectorAll('.folio-reveal');
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            nodes.forEach(function (node) { observer.observe(node); });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loza | MELNI APPS</title>
+    <meta name="description" content="A digital space that brings together conversations, educational content, media, and membership features.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://melniapps.com/work/loza/">
+    <link rel="alternate" hreflang="en" href="https://melniapps.com/work/loza/">
+    <link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/loza/">
+    <link rel="alternate" hreflang="x-default" href="https://melniapps.com/work/loza/">
+    <meta property="og:title" content="Loza | MELNI APPS">
+    <meta property="og:description" content="A digital space that brings together conversations, educational content, media, and membership features.">
+    <meta property="og:url" content="https://melniapps.com/work/loza/">
+    <meta property="og:image" content="https://melniapps.com/og.jpg">
+    <link rel="icon" type="image/jpeg" href="../../fav.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css?v=11">
+    <script src="../../lang.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-inner">
+                <div class="logo">
+                    <a href="../../index.html" class="logo-title gradient-text">MELNI APPS</a>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-links-inner">
+                        <a href="../../index.html#work" class="nav-link">All work</a>
+                        <a href="../../index.html#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="lang-switcher">
+                    <a href="./" class="lang-btn lang-btn--active">EN</a>
+                    <a href="../../ru/work/loza/" class="lang-btn">RU</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="case">
+        <article class="case-wrap">
+            <header class="case-hero">
+                <p class="edit-eyebrow">Loza</p>
+                <h1>A community, built as a product.</h1>
+                <p class="edit-lede">A digital space that brings together conversations, educational content, media, and membership features.</p>
+                <div class="edit-links case-links"><a href="https://lozapsy.help/" target="_blank" rel="noopener">Open the product</a></div>
+                <figure><img src="../../loza.webp" alt="Loza" width="1280" height="720"></figure>
+                <p class="case-note">Interior screens of the media library and CRM are not published on this page.</p>
+            </header>
+            <section class="case-block" aria-label="Overview">
+                <dl class="case-facts">
+                    <div><dt>Product type</dt><dd>Web platform</dd></div>
+                    <div><dt>Platform</dt><dd>Web</dd></div>
+                    <div><dt>Role</dt><dd>Product engineering</dd></div>
+                    <div><dt>Technologies</dt><dd>Authentication, membership, content delivery, backend</dd></div>
+                </dl>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Challenge</h2>
+                <p>Parents needed one place for materials, media, and conversation, instead of a stack of separate tools.</p>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Experience</h2>
+                <ul><li>Open the media library and the feed.</li><li>Use an account to stay in the community.</li><li>Talk with other parents and use the AI features in the product.</li></ul>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Engineering</h2>
+                <p>Authentication, membership logic, content delivery, backend services, and a CRM for operating the community.</p>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Delivery</h2>
+                <p>The platform is live at lozapsy.help.</p>
+            </section>
+            <nav class="case-next" aria-label="Next">
+                <a href="../../index.html#work">All work</a>
+                <a href="../leo-recovery/">Next: Leo Recovery</a>
+            </nav>
+        </article>
+    </main>
+    <script>
+        var nodes = document.querySelectorAll('.folio-reveal');
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            nodes.forEach(function (node) { observer.observe(node); });
+        }
+    </script>
+</body>
+</html>

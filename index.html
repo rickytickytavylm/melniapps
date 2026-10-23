@@ -109,7 +109,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css?v=10">
+    <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
     
@@ -137,247 +137,127 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg-layer"></div>
-        <div class="hero-glow"></div>
-        <div class="hero-container">
-            <h1 class="hero-title">
-                Apps built to <span class="gradient-text">change lives</span>
-            </h1>
-            <a href="#projects" class="hero-btn">
-                Explore
-            </a>
+    <section id="home" class="edit-hero">
+        <div class="edit-wrap">
+            <p class="edit-eyebrow">Independent product engineering</p>
+            <h1>From idea to working product.</h1>
+            <p class="edit-lede">Independent product engineering studio. Mobile apps, complex web platforms, and AI systems, designed, built, and launched.</p>
+            <a class="edit-cta" href="#work">Explore selected work</a>
         </div>
     </section>
 
-    <main class="content-zone folio">
-
-        <section id="projects" class="folio-block folio-kira">
-            <div class="folio-wrap">
-                <p class="folio-index">01</p>
-                <div class="folio-kira-grid">
-                    <div class="folio-reveal">
-                        <div class="kira-kicker-row">
-                            <p class="folio-kicker">Featured project / 01</p>
-                            <p class="folio-kicker">AI Platform</p>
-                        </div>
-                        <h2>Kira AI</h2>
-                        <p class="folio-lead">A multitask AI assistant for digital products and organizations. It works as an AI consultant and an AI seller, and as a guide inside a learning platform: materials, assignments, questions, and user flows. Not a standalone chatbot. An AI function built into a real product.</p>
-                        <ul class="folio-tags">
-                            <li>AI Integration</li>
-                            <li>Multitask AI</li>
-                            <li>AI Sales</li>
-                            <li>EdTech</li>
-                            <li>Backend</li>
-                            <li>Product Logic</li>
-                        </ul>
-                        <div class="kira-actions">
-                            <a class="folio-link" href="https://kira-ai.online/" target="_blank" rel="noopener">Open Kira AI</a>
-                            <a class="folio-link" href="https://t.me/Shurov_ai_bot" target="_blank" rel="noopener">Telegram</a>
-                        </div>
-                        <div class="kira-partner">
-                            <img src="shurov.jpg" alt="Dr. Shurov" width="360" height="360">
-                            <div>
-                                <p class="folio-kicker">Project partner</p>
-                                <p class="kira-partner-name">Dr. Shurov</p>
-                                <p class="kira-partner-note">Shurov School is a live deployment of Kira AI. Dr. Shurov is the partner, not the developer of the product.</p>
-                                <a class="folio-link" href="https://doctorshurov.ru/" target="_blank" rel="noopener">doctorshurov.ru</a>
-                            </div>
-                        </div>
-                    </div>
-                    <figure class="kira-visual folio-reveal">
-                        <img src="kira.webp?v=2" alt="Kira AI interface" width="3840" height="2880">
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <section id="work" class="folio-block">
-            <div class="folio-wrap">
-                <header class="folio-head folio-reveal">
-                    <p class="folio-index">02</p>
-                    <h2>Selected Work</h2>
-                    <p class="folio-sub">From mobile apps to complete digital platforms.</p>
-                </header>
-
-                <div class="folio-list">
-                    <article class="folio-case folio-case--wide folio-reveal">
-                        <div class="folio-shot">
-                            <img src="loza.webp" alt="Loza platform on a laptop" width="1280" height="720" loading="lazy">
-                        </div>
-                        <div class="folio-case-body">
-                            <p class="folio-cat">Web Platform / Community / AI</p>
-                            <h3>Loza</h3>
-                            <p>A platform for a parents' community: learning materials, a media library, accounts, conversation, and AI in one product.</p>
-                            <ul class="folio-tags">
-                                <li>Web application</li>
-                                <li>Backend</li>
-                                <li>CRM</li>
-                                <li>AI</li>
-                                <li>Auth</li>
-                            </ul>
-                            <a class="folio-link" href="https://lozapsy.help/" target="_blank" rel="noopener">Open Loza</a>
-                        </div>
-                    </article>
-
-                    <div class="folio-pair">
-                        <article class="folio-case folio-reveal">
-                            <div class="folio-shot folio-shot--icon">
-                                <img src="newLogos.webp" alt="Fides et Ratio app icon" width="512" height="512" loading="lazy">
-                            </div>
-                            <div class="folio-case-body">
-                                <p class="folio-cat">Mobile App / Content Platform / AI</p>
-                                <h3>Fides et Ratio</h3>
-                                <p>A platform for the Catholic community in Russia: content, media, member features, and AI tools in one system.</p>
-                                <ul class="folio-tags">
-                                    <li>Mobile</li>
-                                    <li>Backend</li>
-                                    <li>Content</li>
-                                    <li>AI</li>
-                                </ul>
-                                <button type="button" class="folio-link" onclick="showComingSoonAlert(event)">App Store</button>
-                            </div>
-                        </article>
-
-                        <article class="folio-case folio-reveal">
-                            <div class="folio-shot folio-shot--icon">
-                                <img src="new_icon.jpg" alt="Leo Recovery app icon" width="512" height="512" loading="lazy">
-                            </div>
-                            <div class="folio-case-body">
-                                <p class="folio-cat">Own Product / Mobile App / AI</p>
-                                <h3>Leo Recovery</h3>
-                                <p>A recovery program with a diary, practices, support tools, and a personal AI assistant.</p>
-                                <ul class="folio-tags">
-                                    <li>React Native</li>
-                                    <li>Expo</li>
-                                    <li>iOS</li>
-                                    <li>Android</li>
-                                    <li>AI</li>
-                                </ul>
-                                <a class="folio-ph" href="https://www.producthunt.com/products/leo-recovery" target="_blank" rel="noopener">#9 Product Hunt</a>
-                                <a class="folio-link" href="https://apps.apple.com/app/leo-recovery/id6752736987" target="_blank" rel="noopener">App Store</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <article class="folio-case folio-case--wide folio-reveal">
-                        <div class="folio-shot">
-                            <img src="teni.webp" alt="Teni championship website" width="1280" height="720" loading="lazy">
-                        </div>
-                        <div class="folio-case-body">
-                            <p class="folio-cat">Web Platform / Event Management</p>
-                            <h3>Teni Championship</h3>
-                            <p>More than an event page: a public site, applications, and a CRM for the championship data.</p>
-                            <ul class="folio-tags">
-                                <li>Web</li>
-                                <li>CRM</li>
-                                <li>Applications</li>
-                                <li>Backend</li>
-                            </ul>
-                            <a class="folio-link" href="https://чемпионат-тень.рф" target="_blank" rel="noopener">Open the site</a>
-                        </div>
-                    </article>
-
-                    <article class="folio-case folio-case--compact folio-reveal">
-                        <div class="folio-shot">
-                            <img src="vostok.webp" alt="Vostok Factory website" width="1280" height="720" loading="lazy">
-                        </div>
-                        <div class="folio-case-body">
-                            <p class="folio-cat">Corporate Website / Web Development</p>
-                            <h3>Vostok Factory</h3>
-                            <p>A corporate site for a confectionery factory in Chita, in production since 1910, with a catalog and a store.</p>
-                            <ul class="folio-tags">
-                                <li>Corporate site</li>
-                                <li>Catalog</li>
-                            </ul>
-                            <a class="folio-link" href="https://фабрика-восток.рф" target="_blank" rel="noopener">Open the site</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="capabilities" class="folio-block">
-            <div class="folio-wrap">
-                <header class="folio-head folio-reveal">
-                    <p class="folio-index">03</p>
-                    <h2>From interface to infrastructure.</h2>
-                    <p class="folio-sub">The full product cycle, in one pair of hands.</p>
-                </header>
-                <div class="folio-caps">
-                    <article class="folio-cap folio-reveal">
-                        <p class="folio-num">01</p>
-                        <h3>Product Development</h3>
-                        <p>Mobile apps, web services, and the interfaces people actually use.</p>
-                        <p class="folio-tech">React Native / Expo / Next.js</p>
-                    </article>
-                    <article class="folio-cap folio-reveal">
-                        <p class="folio-num">02</p>
-                        <h3>Backend & Architecture</h3>
-                        <p>Server logic, APIs, databases, auth, CRM systems, and integrations.</p>
-                        <p class="folio-tech">Python / Django / REST API / PostgreSQL</p>
-                    </article>
-                    <article class="folio-cap folio-reveal">
-                        <p class="folio-num">03</p>
-                        <h3>AI Engineering</h3>
-                        <p>Assistants, language-model integration, context, and process automation.</p>
-                        <p class="folio-tech">LLM APIs / AI integrations / Conversational UI</p>
-                    </article>
-                    <article class="folio-cap folio-reveal">
-                        <p class="folio-num">04</p>
-                        <h3>Launch & Infrastructure</h3>
-                        <p>Deployment, payments, store release, and keeping the product running.</p>
-                        <p class="folio-tech">Deploy / Payments / App Store / Google Play</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="folio-block">
-            <div class="folio-wrap folio-about">
-                <header class="folio-reveal">
-                    <p class="folio-index">04</p>
-                    <h2>One technical partner. The full product cycle.</h2>
-                </header>
-                <article class="folio-about-card folio-reveal">
-                    <div class="folio-person">
-                        <img src="leonid.webp" alt="Leonid Melnichuk" width="1024" height="999">
+    <main class="edit">
+        <section id="work" class="edit-section">
+            <div class="edit-wrap">
+                <p class="edit-eyebrow">Selected work</p>
+                <h2>Built for real use.</h2>
+                <p class="edit-lede">Products in production. From everyday interfaces to the systems behind them.</p>
+                <div class="edit-work">
+                    <a class="edit-piece edit-split folio-reveal" href="work/kira-ai/">
+                        <figure><img src="kira.webp?v=2" alt="Kira AI" width="3840" height="2880"></figure>
                         <div>
-                            <p class="folio-kicker">MELNI APPS</p>
-                            <h3 class="folio-name">Leonid Melnichuk</h3>
-                            <p class="folio-role">Founder / Full-stack & AI Product Engineer</p>
-                            <p>I design, build, and ship digital products. Mobile apps, web platforms, server architecture, and AI integration. The work covers the product as a whole, not a single feature.</p>
+                            <p class="edit-meta"><span>Kira AI</span><span>AI product</span></p>
+                            <h3>Intelligence built into the product.</h3>
+                            <p>An AI assistant inside a live service: answers, learning materials, and the next step for the user.</p>
                         </div>
+                    </a>
+                    <div class="edit-work edit-split">
+                        <a class="edit-piece folio-reveal" href="work/loza/">
+                            <figure><img src="loza.webp" alt="Loza" width="1280" height="720" loading="lazy"></figure>
+                            <p class="edit-meta"><span>Loza</span><span>Web platform</span></p>
+                            <h3>A community, built as a product.</h3>
+                            <p>Conversations, educational content, media, and membership in one place.</p>
+                        </a>
+                        <a class="edit-piece edit-piece--icon folio-reveal" href="work/leo-recovery/">
+                            <figure><img src="new_icon.jpg" alt="Leo Recovery" width="512" height="512" loading="lazy"></figure>
+                            <p class="edit-meta"><span>Leo Recovery</span><span>Mobile app</span></p>
+                            <h3>Recovery, one day at a time.</h3>
+                            <p>Daily tracking, a diary, practices, and support tools. #9 on Product Hunt.</p>
+                        </a>
                     </div>
-                </article>
+                    <a class="edit-piece edit-split edit-split--flip folio-reveal" href="work/fides-et-ratio/">
+                        <figure class="edit-piece--icon"><img src="newLogos.webp" alt="Fides et Ratio" width="512" height="512" loading="lazy"></figure>
+                        <div>
+                            <p class="edit-meta"><span>Fides et Ratio</span><span>Mobile platform</span></p>
+                            <h3>A digital home for a community.</h3>
+                            <p>Catholic content, media, and tools for a Russian-speaking audience.</p>
+                        </div>
+                    </a>
+                    <div class="edit-work edit-split edit-split--flip">
+                        <a class="edit-piece folio-reveal" href="work/teni/">
+                            <figure><img src="teni.webp" alt="Teni Championship" width="1280" height="720" loading="lazy"></figure>
+                            <p class="edit-meta"><span>Teni Championship</span><span>Event platform</span></p>
+                            <h3>Beyond the event website.</h3>
+                            <p>The public championship experience, plus the tools used to run it.</p>
+                        </a>
+                        <a class="edit-piece folio-reveal" href="work/vostok-factory/">
+                            <figure><img src="vostok.webp" alt="Vostok Factory" width="1280" height="720" loading="lazy"></figure>
+                            <p class="edit-meta"><span>Vostok Factory</span><span>Corporate site</span></p>
+                            <h3>A century of production.</h3>
+                            <p>A modern site for a confectionery maker working in Chita since 1910.</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="folio-block">
-            <div class="folio-wrap">
-                <div class="folio-contact folio-reveal">
-                    <p class="folio-index">05</p>
-                    <h2>Have a product idea, or a build to take on?</h2>
-                    <p>A new product, an AI integration, or the next stage of a platform that already exists.</p>
-                    <a class="folio-link" href="mailto:ricksanchezlm7@gmail.com">Discuss a project ↗</a>
-                    <div class="folio-mails">
-                        <p><span>Projects and partnerships</span><a href="mailto:ricksanchezlm7@gmail.com">ricksanchezlm7@gmail.com</a></p>
-                        <p><span>Design and engineering</span><a href="mailto:rickytickytavy@gmail.com">rickytickytavy@gmail.com</a></p>
-                    </div>
+        <section id="capabilities" class="edit-section">
+            <div class="edit-wrap">
+                <p class="edit-eyebrow">Engineering</p>
+                <h2>The interface is only the beginning.</h2>
+                <p class="edit-lede">Behind every product: architecture, data, integrations, payments, and the decisions that make it work.</p>
+                <ol class="edit-system">
+                    <li class="folio-reveal"><strong>01</strong><h3>Product Experience</h3><p>Web, Mobile, UX</p></li>
+                    <li class="folio-reveal"><strong>02</strong><h3>Application Logic</h3><p>APIs, Authentication, Payments</p></li>
+                    <li class="folio-reveal"><strong>03</strong><h3>Infrastructure</h3><p>Deployment, Databases, Integrations</p></li>
+                    <li class="folio-reveal"><strong>04</strong><h3>Applied AI</h3><p>Assistants, LLM Integrations, Automation</p></li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="approach" class="edit-section">
+            <div class="edit-wrap">
+                <p class="edit-eyebrow">Approach</p>
+                <h2>Build. Test. Learn. Improve.</h2>
+                <p class="edit-lede">Good products are shaped by what happens after the first version works. A way the work tends to move, not a fixed method for every project.</p>
+                <ol class="edit-steps">
+                    <li class="folio-reveal"><span>01</span><h3>Explore</h3><p>Understand the problem.</p></li>
+                    <li class="folio-reveal"><span>02</span><h3>Build</h3><p>Turn ideas into working software.</p></li>
+                    <li class="folio-reveal"><span>03</span><h3>Validate</h3><p>Test real behavior and edge cases.</p></li>
+                    <li class="folio-reveal"><span>04</span><h3>Evolve</h3><p>Improve what matters.</p></li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="about" class="edit-section">
+            <div class="edit-wrap edit-about">
+                <img src="leonid.webp" alt="Leonid Melnichuk" width="1024" height="999">
+                <div class="folio-reveal">
+                    <p class="edit-eyebrow">About</p>
+                    <h2>Independent by design.</h2>
+                    <p>MELNI APPS is an independent engineering practice founded by Leonid Melnichuk. Focused on building and improving digital products, from early prototypes to production systems.</p>
                 </div>
-                <footer class="folio-foot">
+            </div>
+        </section>
+
+        <section id="contact" class="edit-section edit-contact">
+            <div class="edit-wrap folio-reveal">
+                <p class="edit-eyebrow">Contact</p>
+                <h2>Have something worth building?</h2>
+                <p>Let's discuss the product, the problem, and what it takes to make it work.</p>
+                <a class="edit-cta" href="mailto:ricksanchezlm7@gmail.com">Start a conversation</a>
+                <div class="edit-links">
+                    <a href="mailto:ricksanchezlm7@gmail.com">ricksanchezlm7@gmail.com</a>
+                    <a href="mailto:rickytickytavy@gmail.com">rickytickytavy@gmail.com</a>
+                </div>
+                <footer class="edit-foot">
                     <p>© 2026 MELNI APPS, LLC</p>
-                    <p>
-                        <a href="company.html">Company</a>
-                        <a href="privacy.html">Privacy</a>
-                        <a href="terms.html">Terms</a>
-                    </p>
+                    <p><a href="company.html">Company</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></p>
                 </footer>
             </div>
         </section>
-
     </main>
+
 
 
     <!-- iOS 26 Liquid Glass Tabbar -->

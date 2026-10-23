@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kira AI | MELNI APPS</title>
+    <meta name="description" content="AI-ассистент для цифровых сервисов: помогает находить ответы, проходить учебные материалы и взаимодействовать с продуктом.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://melniapps.com/ru/work/kira-ai/">
+    <link rel="alternate" hreflang="en" href="https://melniapps.com/work/kira-ai/">
+    <link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/kira-ai/">
+    <link rel="alternate" hreflang="x-default" href="https://melniapps.com/work/kira-ai/">
+    <meta property="og:title" content="Kira AI | MELNI APPS">
+    <meta property="og:description" content="AI-ассистент для цифровых сервисов: помогает находить ответы, проходить учебные материалы и взаимодействовать с продуктом.">
+    <meta property="og:url" content="https://melniapps.com/ru/work/kira-ai/">
+    <meta property="og:image" content="https://melniapps.com/og.jpg">
+    <link rel="icon" type="image/jpeg" href="../../../fav.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css?v=11">
+    <script src="../../../lang.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-inner">
+                <div class="logo">
+                    <a href="../../index.html" class="logo-title gradient-text">MELNI APPS</a>
+                </div>
+                <div class="nav-links">
+                    <div class="nav-links-inner">
+                        <a href="../../index.html#work" class="nav-link">Все работы</a>
+                        <a href="../../index.html#contact" class="nav-link">Контакт</a>
+                    </div>
+                </div>
+                <div class="lang-switcher">
+                    <a href="../../../work/kira-ai/" class="lang-btn">EN</a>
+                    <a href="./" class="lang-btn lang-btn--active">RU</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="case">
+        <article class="case-wrap">
+            <header class="case-hero">
+                <p class="edit-eyebrow">Kira AI</p>
+                <h1>Интеллект внутри продукта.</h1>
+                <p class="edit-lede">AI-ассистент для цифровых сервисов: помогает находить ответы, проходить учебные материалы и взаимодействовать с продуктом.</p>
+                <div class="edit-links case-links"><a href="https://kira-ai.online/" target="_blank" rel="noopener">Открыть продукт</a><a href="https://t.me/Shurov_ai_bot" target="_blank" rel="noopener">Telegram-бот</a></div>
+                <figure><img src="../../../kira.webp?v=2" alt="Kira AI" width="3840" height="2880"></figure>
+                
+            </header>
+            <section class="case-block" aria-label="Обзор">
+                <dl class="case-facts">
+                    <div><dt>Тип продукта</dt><dd>AI-продукт</dd></div>
+                    <div><dt>Платформа</dt><dd>Веб, Telegram</dd></div>
+                    <div><dt>Роль</dt><dd>Продуктовая инженерия</dd></div>
+                    <div><dt>Технологии</dt><dd>Интеграция модели, диалоговые сценарии, backend</dd></div>
+                </dl>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Задача</h2>
+                <p>Ассистент должен жить внутри сервиса, а не отдельным чатом рядом с ним. Нужны ответы, путь по материалу и понятный следующий шаг.</p>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Опыт</h2>
+                <ul><li>Задать вопрос и получить ответ в контексте.</li><li>Идти по учебному материалу, не выходя из продукта.</li><li>Перейти к человеку, когда разговор должен продолжиться вне чата.</li></ul>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Инженерия</h2>
+                <p>В работе: интеграция модели, контекстные ответы, диалоговые сценарии, backend и логика именно этого продукта. «Школа Шурова» — одно живое внедрение. Доктор Шуров партнёр, не разработчик AI.</p>
+            </section>
+            <section class="case-block folio-reveal">
+                <h2>Запуск</h2>
+                <p>Kira AI открыта на сайте и в Telegram-боте.</p>
+            </section>
+            <nav class="case-next" aria-label="Дальше">
+                <a href="../../index.html#work">Все работы</a>
+                <a href="../loza/">Дальше: Лоза</a>
+            </nav>
+        </article>
+    </main>
+    <script>
+        var nodes = document.querySelectorAll('.folio-reveal');
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            nodes.forEach(function (node) { observer.observe(node); });
+        }
+    </script>
+</body>
+</html>

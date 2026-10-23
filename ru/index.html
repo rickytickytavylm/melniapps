@@ -109,7 +109,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="../styles.css?v=10">
+    <link rel="stylesheet" href="../styles.css?v=11">
 </head>
 <body>
     
@@ -137,247 +137,127 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg-layer"></div>
-        <div class="hero-glow"></div>
-        <div class="hero-container">
-            <h1 class="hero-title">
-                Приложения, которые <span class="gradient-text">меняют жизни</span>
-            </h1>
-            <a href="#projects" class="hero-btn">
-                Начать
-            </a>
+    <section id="home" class="edit-hero">
+        <div class="edit-wrap">
+            <p class="edit-eyebrow">Независимая продуктовая инженерия</p>
+            <h1>От идеи до работающего продукта.</h1>
+            <p class="edit-lede">Независимая студия продуктовой инженерии. Мобильные приложения, сложные веб-платформы и AI-системы: проектирование, разработка и запуск.</p>
+            <a class="edit-cta" href="#work">Смотреть работы</a>
         </div>
     </section>
 
-    <main class="content-zone folio">
-
-        <section id="projects" class="folio-block folio-kira">
-            <div class="folio-wrap">
-                <p class="folio-index">01</p>
-                <div class="folio-kira-grid">
-                    <div class="folio-reveal">
-                        <div class="kira-kicker-row">
-                            <p class="folio-kicker">Главный проект / 01</p>
-                            <p class="folio-kicker">AI-платформа</p>
-                        </div>
-                        <h2>Kira AI</h2>
-                        <p class="folio-lead">Мультизадачный AI-ассистент для цифровых продуктов и организаций. Работает как AI-консультант и AI-продавец, а также как помощник внутри образовательной платформы: материалы, задания, вопросы и пользовательские сценарии. Это не отдельный чат-бот, а AI-функция внутри реального продукта.</p>
-                        <ul class="folio-tags">
-                            <li>AI Integration</li>
-                            <li>Multitask AI</li>
-                            <li>AI Sales</li>
-                            <li>EdTech</li>
-                            <li>Backend</li>
-                            <li>Product Logic</li>
-                        </ul>
-                        <div class="kira-actions">
-                            <a class="folio-link" href="https://kira-ai.online/" target="_blank" rel="noopener">Открыть Kira AI</a>
-                            <a class="folio-link" href="https://t.me/Shurov_ai_bot" target="_blank" rel="noopener">Telegram</a>
-                        </div>
-                        <div class="kira-partner">
-                            <img src="../shurov.jpg" alt="Доктор Шуров" width="360" height="360">
-                            <div>
-                                <p class="folio-kicker">Партнёр проекта</p>
-                                <p class="kira-partner-name">Доктор Шуров</p>
-                                <p class="kira-partner-note">Образовательная платформа «Школа Шурова»: пример внедрения Kira AI. Доктор Шуров является партнёром, не разработчиком продукта.</p>
-                                <a class="folio-link" href="https://doctorshurov.ru/" target="_blank" rel="noopener">doctorshurov.ru</a>
-                            </div>
-                        </div>
-                    </div>
-                    <figure class="kira-visual folio-reveal">
-                        <img src="../kira.webp?v=2" alt="Интерфейс Kira AI" width="3840" height="2880">
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <section id="work" class="folio-block">
-            <div class="folio-wrap">
-                <header class="folio-head folio-reveal">
-                    <p class="folio-index">02</p>
-                    <h2>Избранные работы</h2>
-                    <p class="folio-sub">От мобильных приложений до полноценных цифровых платформ.</p>
-                </header>
-
-                <div class="folio-list">
-                    <article class="folio-case folio-case--wide folio-reveal">
-                        <div class="folio-shot">
-                            <img src="../loza.webp" alt="Платформа Лоза на ноутбуке" width="1280" height="720" loading="lazy">
-                        </div>
-                        <div class="folio-case-body">
-                            <p class="folio-cat">Веб-платформа / Сообщество / AI</p>
-                            <h3>Лоза</h3>
-                            <p>Платформа для родительского сообщества: учебные материалы, медиатека, аккаунты, общение и AI-функциональность.</p>
-                            <ul class="folio-tags">
-                                <li>Веб-приложение</li>
-                                <li>Backend</li>
-                                <li>CRM-система</li>
-                                <li>AI</li>
-                                <li>Авторизация</li>
-                            </ul>
-                            <a class="folio-link" href="https://lozapsy.help/" target="_blank" rel="noopener">Открыть Лозу</a>
-                        </div>
-                    </article>
-
-                    <div class="folio-pair">
-                        <article class="folio-case folio-reveal">
-                            <div class="folio-shot folio-shot--icon">
-                                <img src="../newLogos.webp" alt="Иконка приложения Fides et Ratio" width="512" height="512" loading="lazy">
-                            </div>
-                            <div class="folio-case-body">
-                                <p class="folio-cat">Мобильное приложение / Контент-платформа / AI</p>
-                                <h3>Fides et Ratio</h3>
-                                <p>Платформа для католического сообщества России: контент, медиа, функции для участников и AI-инструменты в одной системе.</p>
-                                <ul class="folio-tags">
-                                    <li>Mobile</li>
-                                    <li>Backend</li>
-                                    <li>Контент</li>
-                                    <li>AI</li>
-                                </ul>
-                                <a class="folio-link" href="https://apps.apple.com/ru/app/fides-et-ratio/id6754965341" target="_blank" rel="noopener">App Store</a>
-                            </div>
-                        </article>
-
-                        <article class="folio-case folio-reveal">
-                            <div class="folio-shot folio-shot--icon">
-                                <img src="../new_icon.jpg" alt="Иконка приложения Leo Recovery" width="512" height="512" loading="lazy">
-                            </div>
-                            <div class="folio-case-body">
-                                <p class="folio-cat">Свой продукт / Мобильное приложение / AI</p>
-                                <h3>Leo Recovery</h3>
-                                <p>Программа восстановления: дневник, практики, инструменты поддержки и персональный AI-ассистент.</p>
-                                <ul class="folio-tags">
-                                    <li>React Native</li>
-                                    <li>Expo</li>
-                                    <li>iOS</li>
-                                    <li>Android</li>
-                                    <li>AI</li>
-                                </ul>
-                                <a class="folio-ph" href="https://www.producthunt.com/products/leo-recovery" target="_blank" rel="noopener">#9 Product Hunt</a>
-                                <a class="folio-link" href="https://apps.apple.com/ru/app/leo-recovery/id6752736987" target="_blank" rel="noopener">App Store</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <article class="folio-case folio-case--wide folio-reveal">
-                        <div class="folio-shot">
-                            <img src="../teni.webp" alt="Сайт чемпионата Тень" width="1280" height="720" loading="lazy">
-                        </div>
-                        <div class="folio-case-body">
-                            <p class="folio-cat">Веб-платформа / Управление событием</p>
-                            <h3>Чемпионат «ТЕНЬ»</h3>
-                            <p>Не только сайт мероприятия: публичная страница, приём заявок и CRM-система для данных чемпионата.</p>
-                            <ul class="folio-tags">
-                                <li>Веб</li>
-                                <li>CRM-система</li>
-                                <li>Заявки</li>
-                                <li>Backend</li>
-                            </ul>
-                            <a class="folio-link" href="https://чемпионат-тень.рф" target="_blank" rel="noopener">Открыть сайт</a>
-                        </div>
-                    </article>
-
-                    <article class="folio-case folio-case--compact folio-reveal">
-                        <div class="folio-shot">
-                            <img src="../vostok.webp" alt="Сайт фабрики Восток" width="1280" height="720" loading="lazy">
-                        </div>
-                        <div class="folio-case-body">
-                            <p class="folio-cat">Корпоративный сайт / Веб-разработка</p>
-                            <h3>Фабрика «Восток»</h3>
-                            <p>Корпоративный сайт кондитерской фабрики в Чите, которая работает с 1910 года: каталог и магазин.</p>
-                            <ul class="folio-tags">
-                                <li>Корпоративный сайт</li>
-                                <li>Каталог</li>
-                            </ul>
-                            <a class="folio-link" href="https://фабрика-восток.рф" target="_blank" rel="noopener">Открыть сайт</a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="capabilities" class="folio-block">
-            <div class="folio-wrap">
-                <header class="folio-head folio-reveal">
-                    <p class="folio-index">03</p>
-                    <h2>От интерфейса до инфраструктуры.</h2>
-                    <p class="folio-sub">Полный цикл разработки цифрового продукта в одних руках.</p>
-                </header>
-                <div class="folio-caps">
-                    <article class="folio-cap folio-reveal">
-                        <p class="folio-num">01</p>
-                        <h3>Product Development</h3>
-                        <p>Мобильные приложения, веб-сервисы и пользовательские интерфейсы.</p>
-                        <p class="folio-tech">React Native / Expo / Next.js</p>
-                    </article>
-                    <article class="folio-cap folio-reveal">
-                        <p class="folio-num">02</p>
-                        <h3>Backend & Architecture</h3>
-                        <p>Серверная логика, API, базы данных, авторизация, CRM-системы и интеграции.</p>
-                        <p class="folio-tech">Python / Django / REST API / PostgreSQL</p>
-                    </article>
-                    <article class="folio-cap folio-reveal">
-                        <p class="folio-num">03</p>
-                        <h3>AI Engineering</h3>
-                        <p>AI-ассистенты, интеграция языковых моделей, контекстные сценарии и автоматизация процессов.</p>
-                        <p class="folio-tech">LLM APIs / AI Integrations / Conversational Interfaces</p>
-                    </article>
-                    <article class="folio-cap folio-reveal">
-                        <p class="folio-num">04</p>
-                        <h3>Launch & Infrastructure</h3>
-                        <p>Развёртывание, подключение платежей, публикация приложений и сопровождение.</p>
-                        <p class="folio-tech">Deploy / Payments / App Store / Google Play</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="folio-block">
-            <div class="folio-wrap folio-about">
-                <header class="folio-reveal">
-                    <p class="folio-index">04</p>
-                    <h2>Один технический партнёр. Полный цикл разработки.</h2>
-                </header>
-                <article class="folio-about-card folio-reveal">
-                    <div class="folio-person">
-                        <img src="../leonid.webp" alt="Леонид Мельничук" width="1024" height="999">
+    <main class="edit">
+        <section id="work" class="edit-section">
+            <div class="edit-wrap">
+                <p class="edit-eyebrow">Избранные работы</p>
+                <h2>Сделано для реального использования.</h2>
+                <p class="edit-lede">Продукты в работе. От повседневных интерфейсов до систем за ними.</p>
+                <div class="edit-work">
+                    <a class="edit-piece edit-split folio-reveal" href="work/kira-ai/">
+                        <figure><img src="../kira.webp?v=2" alt="Kira AI" width="3840" height="2880"></figure>
                         <div>
-                            <p class="folio-kicker">MELNI APPS</p>
-                            <h3 class="folio-name">Леонид Мельничук</h3>
-                            <p class="folio-role">Founder / Full-stack & AI Product Engineer</p>
-                            <p>Проектирую, разрабатываю и запускаю цифровые продукты. Работаю с мобильными приложениями, веб-платформами, серверной архитектурой и интеграцией искусственного интеллекта. Беру ответственность не только за отдельные функции, но и за техническую реализацию продукта целиком.</p>
+                            <p class="edit-meta"><span>Kira AI</span><span>AI-продукт</span></p>
+                            <h3>Интеллект внутри продукта.</h3>
+                            <p>AI-ассистент внутри живого сервиса: ответы, учебные материалы и следующий шаг для пользователя.</p>
                         </div>
+                    </a>
+                    <div class="edit-work edit-split">
+                        <a class="edit-piece folio-reveal" href="work/loza/">
+                            <figure><img src="../loza.webp" alt="Лоза" width="1280" height="720" loading="lazy"></figure>
+                            <p class="edit-meta"><span>Лоза</span><span>Веб-платформа</span></p>
+                            <h3>Сообщество как продукт.</h3>
+                            <p>Общение, учебный контент, медиа и участие в одном месте.</p>
+                        </a>
+                        <a class="edit-piece edit-piece--icon folio-reveal" href="work/leo-recovery/">
+                            <figure><img src="../new_icon.jpg" alt="Leo Recovery" width="512" height="512" loading="lazy"></figure>
+                            <p class="edit-meta"><span>Leo Recovery</span><span>Мобильное приложение</span></p>
+                            <h3>Восстановление, день за днём.</h3>
+                            <p>Дневной учёт, дневник, практики и инструменты поддержки. #9 на Product Hunt.</p>
+                        </a>
                     </div>
-                </article>
+                    <a class="edit-piece edit-split edit-split--flip folio-reveal" href="work/fides-et-ratio/">
+                        <figure class="edit-piece--icon"><img src="../newLogos.webp" alt="Fides et Ratio" width="512" height="512" loading="lazy"></figure>
+                        <div>
+                            <p class="edit-meta"><span>Fides et Ratio</span><span>Мобильная платформа</span></p>
+                            <h3>Цифровой дом сообщества.</h3>
+                            <p>Католический контент, медиа и инструменты для русскоязычной аудитории.</p>
+                        </div>
+                    </a>
+                    <div class="edit-work edit-split edit-split--flip">
+                        <a class="edit-piece folio-reveal" href="work/teni/">
+                            <figure><img src="../teni.webp" alt="Чемпионат Тень" width="1280" height="720" loading="lazy"></figure>
+                            <p class="edit-meta"><span>Чемпионат «ТЕНЬ»</span><span>Платформа события</span></p>
+                            <h3>Больше, чем сайт мероприятия.</h3>
+                            <p>Публичная часть чемпионата и инструменты, которыми его ведут.</p>
+                        </a>
+                        <a class="edit-piece folio-reveal" href="work/vostok-factory/">
+                            <figure><img src="../vostok.webp" alt="Фабрика Восток" width="1280" height="720" loading="lazy"></figure>
+                            <p class="edit-meta"><span>Фабрика «Восток»</span><span>Корпоративный сайт</span></p>
+                            <h3>Век производства.</h3>
+                            <p>Современный сайт кондитерской фабрики, которая работает в Чите с 1910 года.</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="folio-block">
-            <div class="folio-wrap">
-                <div class="folio-contact folio-reveal">
-                    <p class="folio-index">05</p>
-                    <h2>Есть идея продукта или задача по разработке?</h2>
-                    <p>Обсудим создание нового продукта, AI-интеграцию или развитие существующей платформы.</p>
-                    <a class="folio-link" href="mailto:ricksanchezlm7@gmail.com">Обсудить проект ↗</a>
-                    <div class="folio-mails">
-                        <p><span>Проекты и партнёрства</span><a href="mailto:ricksanchezlm7@gmail.com">ricksanchezlm7@gmail.com</a></p>
-                        <p><span>Дизайн и разработка</span><a href="mailto:rickytickytavy@gmail.com">rickytickytavy@gmail.com</a></p>
-                    </div>
+        <section id="capabilities" class="edit-section">
+            <div class="edit-wrap">
+                <p class="edit-eyebrow">Инженерия</p>
+                <h2>Интерфейс только начало.</h2>
+                <p class="edit-lede">За каждым продуктом: архитектура, данные, интеграции, платежи и решения, из-за которых это работает.</p>
+                <ol class="edit-system">
+                    <li class="folio-reveal"><strong>01</strong><h3>Product Experience</h3><p>Web, Mobile, UX</p></li>
+                    <li class="folio-reveal"><strong>02</strong><h3>Application Logic</h3><p>API, авторизация, платежи</p></li>
+                    <li class="folio-reveal"><strong>03</strong><h3>Infrastructure</h3><p>Развёртывание, базы данных, интеграции</p></li>
+                    <li class="folio-reveal"><strong>04</strong><h3>Applied AI</h3><p>Ассистенты, интеграция LLM, автоматизация</p></li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="approach" class="edit-section">
+            <div class="edit-wrap">
+                <p class="edit-eyebrow">Подход</p>
+                <h2>Собрать. Проверить. Понять. Улучшить.</h2>
+                <p class="edit-lede">Хороший продукт складывается из того, что происходит после первой рабочей версии. Так обычно движется работа, а не обязательный метод каждого проекта.</p>
+                <ol class="edit-steps">
+                    <li class="folio-reveal"><span>01</span><h3>Разобраться</h3><p>Понять задачу.</p></li>
+                    <li class="folio-reveal"><span>02</span><h3>Собрать</h3><p>Превратить идею в работающий софт.</p></li>
+                    <li class="folio-reveal"><span>03</span><h3>Проверить</h3><p>Проверить реальное поведение и крайние случаи.</p></li>
+                    <li class="folio-reveal"><span>04</span><h3>Развивать</h3><p>Улучшать то, что важно.</p></li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="about" class="edit-section">
+            <div class="edit-wrap edit-about">
+                <img src="../leonid.webp" alt="Леонид Мельничук" width="1024" height="999">
+                <div class="folio-reveal">
+                    <p class="edit-eyebrow">Об авторе</p>
+                    <h2>Независимость как принцип.</h2>
+                    <p>MELNI APPS — независимая инженерная практика Леонида Мельничука. Фокус на создании и развитии цифровых продуктов, от ранних прототипов до систем в продакшене.</p>
                 </div>
-                <footer class="folio-foot">
+            </div>
+        </section>
+
+        <section id="contact" class="edit-section edit-contact">
+            <div class="edit-wrap folio-reveal">
+                <p class="edit-eyebrow">Контакт</p>
+                <h2>Есть что собрать?</h2>
+                <p>Обсудим продукт, задачу и то, что нужно, чтобы это заработало.</p>
+                <a class="edit-cta" href="mailto:ricksanchezlm7@gmail.com">Начать разговор</a>
+                <div class="edit-links">
+                    <a href="mailto:ricksanchezlm7@gmail.com">ricksanchezlm7@gmail.com</a>
+                    <a href="mailto:rickytickytavy@gmail.com">rickytickytavy@gmail.com</a>
+                </div>
+                <footer class="edit-foot">
                     <p>© 2026 MELNI APPS, LLC</p>
-                    <p>
-                        <a href="../company.html">Компания</a>
-                        <a href="privacy.html">Приватность</a>
-                        <a href="../terms.html">Условия</a>
-                    </p>
+                    <p><a href="../company.html">Компания</a><a href="privacy.html">Приватность</a><a href="../terms.html">Условия</a></p>
                 </footer>
             </div>
         </section>
-
     </main>
+
 
 
     <!-- iOS 26 Liquid Glass Tabbar -->

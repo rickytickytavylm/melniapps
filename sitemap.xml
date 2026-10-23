@@ -81,6 +81,103 @@
   </url>
 
   <url>
+    <loc>https://melniapps.com/work/kira-ai/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/work/kira-ai/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/kira-ai/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://melniapps.com/ru/work/kira-ai/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/kira-ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/work/kira-ai/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://melniapps.com/work/loza/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/work/loza/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/loza/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://melniapps.com/ru/work/loza/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/loza/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/work/loza/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://melniapps.com/work/leo-recovery/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/work/leo-recovery/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/leo-recovery/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://melniapps.com/ru/work/leo-recovery/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/leo-recovery/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/work/leo-recovery/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://melniapps.com/work/fides-et-ratio/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/work/fides-et-ratio/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/fides-et-ratio/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://melniapps.com/ru/work/fides-et-ratio/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/fides-et-ratio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/work/fides-et-ratio/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://melniapps.com/work/teni/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/work/teni/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/teni/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://melniapps.com/ru/work/teni/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/teni/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/work/teni/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://melniapps.com/work/vostok-factory/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/work/vostok-factory/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/vostok-factory/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://melniapps.com/ru/work/vostok-factory/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://melniapps.com/ru/work/vostok-factory/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://melniapps.com/work/vostok-factory/"/>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://melniapps.com/terms.html</loc>
     <lastmod>2026-07-13</lastmod>
     <changefreq>yearly</changefreq>

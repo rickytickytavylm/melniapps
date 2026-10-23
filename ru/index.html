@@ -109,7 +109,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="../styles.css?v=11">
+    <link rel="stylesheet" href="../styles.css?v=12">
 </head>
 <body>
     
@@ -137,12 +137,16 @@
         </nav>
     </header>
 
-    <section id="home" class="edit-hero">
-        <div class="edit-wrap">
-            <p class="edit-eyebrow">Независимая продуктовая инженерия</p>
-            <h1>От идеи до работающего продукта.</h1>
-            <p class="edit-lede">Независимая студия продуктовой инженерии. Мобильные приложения, сложные веб-платформы и AI-системы: проектирование, разработка и запуск.</p>
-            <a class="edit-cta" href="#work">Смотреть работы</a>
+    <section id="home" class="hero">
+        <div class="hero-bg-layer"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-container">
+            <h1 class="hero-title">
+                Приложения, которые <span class="gradient-text">меняют жизни</span>
+            </h1>
+            <a href="#work" class="hero-btn">
+                Начать
+            </a>
         </div>
     </section>
 
@@ -153,7 +157,7 @@
                 <h2>Сделано для реального использования.</h2>
                 <p class="edit-lede">Продукты в работе. От повседневных интерфейсов до систем за ними.</p>
                 <div class="edit-work">
-                    <a class="edit-piece edit-split folio-reveal" href="work/kira-ai/">
+                    <a class="edit-piece folio-reveal" href="work/kira-ai/">
                         <figure><img src="../kira.webp?v=2" alt="Kira AI" width="3840" height="2880"></figure>
                         <div>
                             <p class="edit-meta"><span>Kira AI</span><span>AI-продукт</span></p>
@@ -161,7 +165,7 @@
                             <p>AI-ассистент внутри живого сервиса: ответы, учебные материалы и следующий шаг для пользователя.</p>
                         </div>
                     </a>
-                    <div class="edit-work edit-split">
+                    <div class="edit-work edit-pair">
                         <a class="edit-piece folio-reveal" href="work/loza/">
                             <figure><img src="../loza.webp" alt="Лоза" width="1280" height="720" loading="lazy"></figure>
                             <p class="edit-meta"><span>Лоза</span><span>Веб-платформа</span></p>
@@ -175,7 +179,7 @@
                             <p>Дневной учёт, дневник, практики и инструменты поддержки. #9 на Product Hunt.</p>
                         </a>
                     </div>
-                    <a class="edit-piece edit-split edit-split--flip folio-reveal" href="work/fides-et-ratio/">
+                    <a class="edit-piece folio-reveal" href="work/fides-et-ratio/">
                         <figure class="edit-piece--icon"><img src="../newLogos.webp" alt="Fides et Ratio" width="512" height="512" loading="lazy"></figure>
                         <div>
                             <p class="edit-meta"><span>Fides et Ratio</span><span>Мобильная платформа</span></p>
@@ -183,7 +187,7 @@
                             <p>Католический контент, медиа и инструменты для русскоязычной аудитории.</p>
                         </div>
                     </a>
-                    <div class="edit-work edit-split edit-split--flip">
+                    <div class="edit-work edit-pair">
                         <a class="edit-piece folio-reveal" href="work/teni/">
                             <figure><img src="../teni.webp" alt="Чемпионат Тень" width="1280" height="720" loading="lazy"></figure>
                             <p class="edit-meta"><span>Чемпионат «ТЕНЬ»</span><span>Платформа события</span></p>

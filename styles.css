@@ -3361,22 +3361,15 @@ button.project-link {
 
 .edit-piece img.edit-shot-app {
     width: 100%;
-    height: 22rem;
-    object-fit: cover;
-    object-position: center top;
-    aspect-ratio: auto;
+    height: auto;
+    object-fit: contain;
+    background: #111;
 }
 
 .case-shot-app {
-    width: min(100%, 22rem);
+    width: min(100%, 40rem);
     height: auto;
     margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .edit-piece img.edit-shot-app {
-        height: 28rem;
-    }
 }
 
 .edit-meta {

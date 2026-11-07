@@ -109,7 +109,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css?v=14">
+    <link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body>
     
@@ -153,52 +153,120 @@
     <main class="edit">
         <section id="work" class="edit-section">
             <div class="edit-wrap">
-                <p class="edit-eyebrow">Selected work</p>
-                <h2>Built for real use.</h2>
-                <p class="edit-lede">Software in active production: from the interfaces people touch every day to the server architecture underneath.</p>
-                <div class="edit-work">
-                    <a class="edit-piece folio-reveal" href="work/kira-ai/">
-                        <figure><img src="kira.webp?v=2" alt="Kira AI" width="3840" height="2880"></figure>
+                <div class="edit-head folio-reveal">
+                    <div>
+                        <p class="edit-eyebrow">01 / Flagship project</p>
+                        <h2>Kira AI: intelligence built into the product.</h2>
+                    </div>
+                    <p class="edit-lede">A multipurpose AI assistant for digital platforms and organizations. It handles initial consultations, helps people choose the right program, and supports students through course material.</p>
+                </div>
+
+                <article class="edit-flagship folio-reveal">
+                    <div class="edit-flagship-body">
                         <div>
-                            <p class="edit-meta"><span>Kira AI</span><span>AI system</span></p>
-                            <h3>Intelligence built into the product.</h3>
-                            <p>A multipurpose AI assistant embedded in a live service: guiding users, answering questions in context, and leading them to the right form of care.</p>
+                            <div class="edit-flagship-top">
+                                <span class="edit-badge">Kira AI · 01</span>
+                                <span class="edit-badge edit-badge--pill">AI Platform / Web & Telegram</span>
+                            </div>
+                            <h3>Not a standalone widget, but a working layer of the product.</h3>
+                            <p>Kira understands context, answers substantive questions in multiple languages, and hands the conversation over to a human coordinator when personal care is needed.</p>
+                            <ul class="edit-pills">
+                                <li>LLM Integration</li>
+                                <li>Dialogue Logic</li>
+                                <li>Program Matching</li>
+                                <li>Course Context</li>
+                                <li>Web & Telegram</li>
+                            </ul>
+                            <div class="edit-partner">
+                                <img src="shurov.jpg" alt="Dr. Vasily Shurov" width="360" height="360" loading="lazy">
+                                <div class="edit-partner-meta">
+                                    <span>Project partner</span>
+                                    <strong>Dr. Vasily Shurov</strong>
+                                    <small>Live deployment powering Dr. Shurov's School</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit-actions">
+                            <a class="edit-cta" href="work/kira-ai/">Read case study</a>
+                            <a class="edit-cta edit-cta--ghost" href="https://kira-ai.online/" target="_blank" rel="noopener">kira-ai.online ↗</a>
+                            <a class="edit-cta edit-cta--ghost" href="https://t.me/Shurov_ai_bot" target="_blank" rel="noopener">Telegram ↗</a>
+                        </div>
+                    </div>
+                    <figure class="edit-flagship-media">
+                        <img src="kira.webp?v=2" alt="Kira AI interface" width="3840" height="2880">
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <section class="edit-section">
+            <div class="edit-wrap">
+                <div class="edit-head folio-reveal">
+                    <div>
+                        <p class="edit-eyebrow">02 / Selected work</p>
+                        <h2>Built for real use.</h2>
+                    </div>
+                    <p class="edit-lede">From original iOS and Android applications to private member communities, event platforms, and internal CRM systems.</p>
+                </div>
+
+                <div class="edit-work">
+                    <a class="edit-piece edit-piece--wide folio-reveal" href="work/loza/">
+                        <figure><img src="loza.webp" alt="Loza platform on a laptop" width="1280" height="720" loading="lazy"></figure>
+                        <div class="edit-piece-body">
+                            <p class="edit-meta"><span>01 · Loza</span><span>Web Platform & AI</span></p>
+                            <h3>A community, built as a product.</h3>
+                            <p>A dedicated web platform for parents of teenagers: psychologist-led lectures, a curated media library, film club, member rooms, and an integrated AI assistant.</p>
+                            <ul class="edit-pills">
+                                <li>Web Application</li>
+                                <li>Media Library</li>
+                                <li>Community Chat</li>
+                                <li>Custom CRM</li>
+                            </ul>
+                            <span class="edit-more">Read case study ↗</span>
                         </div>
                     </a>
-                    <div class="edit-work edit-pair">
-                        <a class="edit-piece folio-reveal" href="work/loza/">
-                            <figure><img src="loza.webp" alt="Loza" width="1280" height="720" loading="lazy"></figure>
-                            <p class="edit-meta"><span>Loza</span><span>Web platform</span></p>
-                            <h3>A community, built as a product.</h3>
-                            <p>A dedicated web platform for parents of teenagers: expert lectures, a media library, community discussions, and an integrated AI assistant.</p>
-                        </a>
+
+                    <div class="edit-pair">
                         <a class="edit-piece folio-reveal" href="work/leo-recovery/">
                             <figure><img class="edit-shot-app" src="leo-mock.webp?v=3" alt="Leo Recovery on iPhone" width="1152" height="864" loading="lazy"></figure>
-                            <p class="edit-meta"><span>Leo Recovery</span><span>Mobile app</span></p>
-                            <h3>Recovery, one day at a time.</h3>
-                            <p>A daily companion for addiction recovery: structured theory, an emotion journal, audio practices, and quiet support. #9 Product of the Day on Product Hunt.</p>
+                            <div class="edit-piece-body">
+                                <p class="edit-meta"><span>02 · Leo Recovery</span><span>iOS & Android · #9 Product Hunt</span></p>
+                                <h3>Recovery, one day at a time.</h3>
+                                <p>An original mobile companion for addiction recovery: over thirty chapters of theory, an emotion journal, audio practices, and a 24/7 AI assistant.</p>
+                                <span class="edit-more">Read case study ↗</span>
+                            </div>
+                        </a>
+
+                        <a class="edit-piece folio-reveal" href="work/fides-et-ratio/">
+                            <figure><img class="edit-shot-app" src="fides-mock.webp?v=3" alt="Fides et Ratio on iPhone" width="1152" height="864" loading="lazy"></figure>
+                            <div class="edit-piece-body">
+                                <p class="edit-meta"><span>03 · Fides et Ratio</span><span>Mobile Media Platform</span></p>
+                                <h3>A digital home for a community.</h3>
+                                <p>A Catholic mobile platform in Russian: 500+ audio recordings on the Catechism, daily readings, live Radio Maria broadcast, and AI-assisted study.</p>
+                                <span class="edit-more">Read case study ↗</span>
+                            </div>
                         </a>
                     </div>
-                    <a class="edit-piece folio-reveal" href="work/fides-et-ratio/">
-                        <figure><img class="edit-shot-app" src="fides-mock.webp?v=3" alt="Fides et Ratio on iPhone" width="1152" height="864" loading="lazy"></figure>
-                        <div>
-                            <p class="edit-meta"><span>Fides et Ratio</span><span>Mobile platform</span></p>
-                            <h3>A digital home for a community.</h3>
-                            <p>A Catholic mobile platform in Russian: a complete audio course on the Catechism, daily readings, live Radio Maria broadcast, and AI-assisted study.</p>
-                        </div>
-                    </a>
-                    <div class="edit-work edit-pair">
+
+                    <div class="edit-pair">
                         <a class="edit-piece folio-reveal" href="work/teni/">
                             <figure><img src="teni.webp" alt="Teni Championship" width="1280" height="720" loading="lazy"></figure>
-                            <p class="edit-meta"><span>Teni Championship</span><span>Event platform</span></p>
-                            <h3>Beyond the event website.</h3>
-                            <p>The public face of a national stage-art championship paired with participant registration and an internal CRM for the organizers.</p>
+                            <div class="edit-piece-body">
+                                <p class="edit-meta"><span>04 · Teni Championship</span><span>Event Platform & CRM</span></p>
+                                <h3>Beyond the event website.</h3>
+                                <p>The public showcase of a national stage-art championship in Moscow, paired with video registration and an internal CRM for the organizers.</p>
+                                <span class="edit-more">Read case study ↗</span>
+                            </div>
                         </a>
+
                         <a class="edit-piece folio-reveal" href="work/vostok-factory/">
                             <figure><img src="vostok.webp" alt="Vostok Factory" width="1280" height="720" loading="lazy"></figure>
-                            <p class="edit-meta"><span>Vostok Factory</span><span>Corporate site</span></p>
-                            <h3>A century of production.</h3>
-                            <p>A modern web presence and product catalog for one of Eastern Siberia's oldest confectionery factories, founded in Chita in 1910.</p>
+                            <div class="edit-piece-body">
+                                <p class="edit-meta"><span>05 · Vostok Factory</span><span>Corporate Website & Catalog</span></p>
+                                <h3>A century of production.</h3>
+                                <p>Official website and product catalog for one of Eastern Siberia's oldest confectionery factories, operating in Chita since 1910.</p>
+                                <span class="edit-more">Read case study ↗</span>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -207,52 +275,83 @@
 
         <section id="capabilities" class="edit-section">
             <div class="edit-wrap">
-                <p class="edit-eyebrow">Engineering</p>
-                <h2>The interface is only the beginning.</h2>
-                <p class="edit-lede">Behind every screen: server architecture, data models, payment flows, and the engineering decisions that keep a product reliable.</p>
+                <div class="edit-head folio-reveal">
+                    <div>
+                        <p class="edit-eyebrow">03 / Engineering</p>
+                        <h2>The interface is only the beginning.</h2>
+                    </div>
+                    <p class="edit-lede">Behind every screen: server architecture, data models, payment flows, and the engineering decisions that keep a product reliable.</p>
+                </div>
                 <ol class="edit-system">
-                    <li class="folio-reveal"><strong>01</strong><h3>Product Experience</h3><p>Web platforms, native-feel iOS and Android apps, considered interfaces</p></li>
-                    <li class="folio-reveal"><strong>02</strong><h3>Application Logic</h3><p>APIs, authentication, subscriptions, payment flows, and custom CRM tools</p></li>
-                    <li class="folio-reveal"><strong>03</strong><h3>Infrastructure</h3><p>Database design, deployment pipelines, production hosting, and maintenance</p></li>
-                    <li class="folio-reveal"><strong>04</strong><h3>Applied AI</h3><p>LLM integrations, domain context, and conversational flows grounded in product logic</p></li>
+                    <li class="folio-reveal">
+                        <strong>01 / Interface</strong>
+                        <h3>Product Experience</h3>
+                        <p>Web platforms, iOS and Android applications, considered user flows, and responsive interfaces.</p>
+                    </li>
+                    <li class="folio-reveal">
+                        <strong>02 / Logic</strong>
+                        <h3>Backend & Custom CRM</h3>
+                        <p>APIs, authentication, subscriptions, payment flows, and internal management systems built around the workflow.</p>
+                    </li>
+                    <li class="folio-reveal">
+                        <strong>03 / Foundation</strong>
+                        <h3>Infrastructure & Release</h3>
+                        <p>Database design, server deployment, App Store and Google Play publishing, and ongoing production operation.</p>
+                    </li>
+                    <li class="folio-reveal">
+                        <strong>04 / Intelligence</strong>
+                        <h3>Applied AI</h3>
+                        <p>LLM integrations grounded in product context, structured dialogue flows, and practical automation.</p>
+                    </li>
                 </ol>
             </div>
         </section>
 
         <section id="approach" class="edit-section">
             <div class="edit-wrap">
-                <p class="edit-eyebrow">Approach</p>
-                <h2>Understand. Build. Verify. Evolve.</h2>
-                <p class="edit-lede">A product earns its keep after the first release, once real people begin to rely on it.</p>
+                <div class="edit-head folio-reveal">
+                    <div>
+                        <p class="edit-eyebrow">04 / Approach</p>
+                        <h2>Understand. Build. Verify. Evolve.</h2>
+                    </div>
+                    <p class="edit-lede">A product earns its keep after the first release, once real people begin to rely on it.</p>
+                </div>
                 <ol class="edit-steps">
-                    <li class="folio-reveal"><span>01</span><h3>Explore</h3><p>Understand the domain and strip away what is unnecessary before writing code.</p></li>
-                    <li class="folio-reveal"><span>02</span><h3>Build</h3><p>Deliver the whole stack: from database schema and API to the final interface.</p></li>
-                    <li class="folio-reveal"><span>03</span><h3>Validate</h3><p>Test against real usage, edge cases, and operational load.</p></li>
-                    <li class="folio-reveal"><span>04</span><h3>Evolve</h3><p>Refine what matters as the product grows in production.</p></li>
+                    <li class="folio-reveal"><span>Step 01</span><h3>Explore</h3><p>Understand the domain and strip away what is unnecessary before writing code.</p></li>
+                    <li class="folio-reveal"><span>Step 02</span><h3>Build</h3><p>Deliver the whole stack: from database schema and API to the final interface.</p></li>
+                    <li class="folio-reveal"><span>Step 03</span><h3>Validate</h3><p>Test against real usage, edge cases, and operational load.</p></li>
+                    <li class="folio-reveal"><span>Step 04</span><h3>Evolve</h3><p>Refine what matters as the product grows in production.</p></li>
                 </ol>
             </div>
         </section>
 
         <section id="about" class="edit-section">
-            <div class="edit-wrap edit-about">
-                <img src="leonid.webp" alt="Leonid Melnichuk" width="1024" height="999">
-                <div class="folio-reveal">
-                    <p class="edit-eyebrow">About</p>
-                    <h2>Independent by design.</h2>
-                    <p>MELNI APPS is the independent engineering practice of Leonid Melnichuk. I take products from initial architecture and interface design through App Store, Google Play, and web release.</p>
+            <div class="edit-wrap">
+                <div class="edit-about folio-reveal">
+                    <img src="leonid.webp" alt="Leonid Melnichuk" width="1024" height="999">
+                    <div>
+                        <p class="edit-eyebrow">05 / About</p>
+                        <h2>Independent by design.</h2>
+                        <p class="edit-about-role">Leonid Melnichuk · Founder, Full-Cycle Product Engineer</p>
+                        <p>MELNI APPS is an independent engineering practice. I take products from initial architecture and interface design through App Store, Google Play, and production web release.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="edit-section edit-contact">
-            <div class="edit-wrap folio-reveal">
-                <p class="edit-eyebrow">Contact</p>
-                <h2>Have something worth building?</h2>
-                <p>Write to discuss a new product, a mobile or web platform, or a thoughtful AI integration for an existing service.</p>
-                <a class="edit-cta" href="mailto:ricksanchezlm7@gmail.com">Start a conversation</a>
-                <div class="edit-links">
-                    <a href="mailto:ricksanchezlm7@gmail.com">ricksanchezlm7@gmail.com</a>
-                    <a href="mailto:rickytickytavy@gmail.com">rickytickytavy@gmail.com</a>
+            <div class="edit-wrap">
+                <div class="edit-contact-box folio-reveal">
+                    <p class="edit-eyebrow">Contact</p>
+                    <h2>Have something worth building?</h2>
+                    <p>Write to discuss a new product, a mobile or web platform, or a thoughtful AI integration for an existing service.</p>
+                    <div class="edit-actions">
+                        <a class="edit-cta" href="mailto:ricksanchezlm7@gmail.com">Start a conversation ↗</a>
+                    </div>
+                    <div class="edit-links">
+                        <a href="mailto:ricksanchezlm7@gmail.com">ricksanchezlm7@gmail.com</a>
+                        <a href="mailto:rickytickytavy@gmail.com">rickytickytavy@gmail.com</a>
+                    </div>
                 </div>
                 <footer class="edit-foot">
                     <p>© 2026 MELNI APPS, LLC</p>

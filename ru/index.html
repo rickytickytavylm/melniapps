@@ -109,7 +109,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     
     <!-- Styles -->
-    <link rel="stylesheet" href="../styles.css?v=14">
+    <link rel="stylesheet" href="../styles.css?v=15">
 </head>
 <body>
     
@@ -153,52 +153,120 @@
     <main class="edit">
         <section id="work" class="edit-section">
             <div class="edit-wrap">
-                <p class="edit-eyebrow">Избранные проекты</p>
-                <h2>Продукты, созданные для дела.</h2>
-                <p class="edit-lede">Действующие сервисы и мобильные приложения: от пользовательского интерфейса до серверной архитектуры, которая стоит за ним.</p>
-                <div class="edit-work">
-                    <a class="edit-piece folio-reveal" href="work/kira-ai/">
-                        <figure><img src="../kira.webp?v=2" alt="Kira AI" width="3840" height="2880"></figure>
+                <div class="edit-head folio-reveal">
+                    <div>
+                        <p class="edit-eyebrow">01 / Флагманский проект</p>
+                        <h2>Kira AI: искусственный интеллект внутри сервиса.</h2>
+                    </div>
+                    <p class="edit-lede">Многозадачный ИИ-помощник для цифровых платформ и организаций. Ведёт первичную консультацию, помогает подобрать подходящий формат участия и сопровождает учеников по ходу образовательной программы.</p>
+                </div>
+
+                <article class="edit-flagship folio-reveal">
+                    <div class="edit-flagship-body">
                         <div>
-                            <p class="edit-meta"><span>Kira AI</span><span>ИИ-система</span></p>
-                            <h3>Искусственный интеллект внутри сервиса.</h3>
-                            <p>Умный помощник для клиентов и учеников: отвечает на вопросы, помогает ориентироваться в материалах и подсказывает верный следующий шаг.</p>
+                            <div class="edit-flagship-top">
+                                <span class="edit-badge">Kira AI · 01</span>
+                                <span class="edit-badge edit-badge--pill">ИИ-платформа / Веб и Telegram</span>
+                            </div>
+                            <h3>Не отдельный чат-бот, а прикладной слой живого продукта.</h3>
+                            <p>Кира понимает контекст обращения, отвечает по существу и в нужный момент бережно передаёт разговор куратору или специалисту.</p>
+                            <ul class="edit-pills">
+                                <li>Языковые модели</li>
+                                <li>Диалоговая логика</li>
+                                <li>Подбор программ</li>
+                                <li>Учебный контекст</li>
+                                <li>Веб и Telegram</li>
+                            </ul>
+                            <div class="edit-partner">
+                                <img src="../shurov.jpg" alt="Доктор Василий Шуров" width="360" height="360" loading="lazy">
+                                <div class="edit-partner-meta">
+                                    <span>Партнёр проекта</span>
+                                    <strong>Доктор Василий Шуров</strong>
+                                    <small>Действующее внедрение на платформе «Школа доктора Шурова»</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit-actions">
+                            <a class="edit-cta" href="work/kira-ai/">Разбор проекта</a>
+                            <a class="edit-cta edit-cta--ghost" href="https://kira-ai.online/" target="_blank" rel="noopener">kira-ai.online ↗</a>
+                            <a class="edit-cta edit-cta--ghost" href="https://t.me/Shurov_ai_bot" target="_blank" rel="noopener">Telegram ↗</a>
+                        </div>
+                    </div>
+                    <figure class="edit-flagship-media">
+                        <img src="../kira.webp?v=2" alt="Интерфейс Kira AI" width="3840" height="2880">
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <section class="edit-section">
+            <div class="edit-wrap">
+                <div class="edit-head folio-reveal">
+                    <div>
+                        <p class="edit-eyebrow">02 / Избранные проекты</p>
+                        <h2>Продукты, созданные для дела.</h2>
+                    </div>
+                    <p class="edit-lede">От собственных мобильных приложений в App Store до закрытых сообществ, отраслевых платформ и внутренних CRM-систем.</p>
+                </div>
+
+                <div class="edit-work">
+                    <a class="edit-piece edit-piece--wide folio-reveal" href="work/loza/">
+                        <figure><img src="../loza.webp" alt="Платформа родительского клуба Лоза" width="1280" height="720" loading="lazy"></figure>
+                        <div class="edit-piece-body">
+                            <p class="edit-meta"><span>01 · Лоза</span><span>Веб-платформа и ИИ</span></p>
+                            <h3>Платформа родительского клуба.</h3>
+                            <p>Закрытая среда для родителей подростков: лекции и разборы психологов, медиатека, киноклуб, живые чаты участников и встроенный ИИ-помощник.</p>
+                            <ul class="edit-pills">
+                                <li>Веб-приложение</li>
+                                <li>Медиатека</li>
+                                <li>Чаты</li>
+                                <li>CRM-система</li>
+                            </ul>
+                            <span class="edit-more">Подробнее о проекте ↗</span>
                         </div>
                     </a>
-                    <div class="edit-work edit-pair">
-                        <a class="edit-piece folio-reveal" href="work/loza/">
-                            <figure><img src="../loza.webp" alt="Лоза" width="1280" height="720" loading="lazy"></figure>
-                            <p class="edit-meta"><span>Лоза</span><span>Веб-платформа</span></p>
-                            <h3>Платформа родительского клуба.</h3>
-                            <p>Единое пространство для родителей подростков: лекции психологов, медиатека, живое общение и встроенный ИИ-помощник.</p>
-                        </a>
+
+                    <div class="edit-pair">
                         <a class="edit-piece folio-reveal" href="work/leo-recovery/">
                             <figure><img class="edit-shot-app" src="../leo-mock.webp?v=3" alt="Leo Recovery на iPhone" width="1152" height="864" loading="lazy"></figure>
-                            <p class="edit-meta"><span>Leo Recovery</span><span>Мобильное приложение</span></p>
-                            <h3>Опора на пути к трезвости.</h3>
-                            <p>Ежедневная программа восстановления, дневник состояний, аудиопрактики и бережная поддержка. Топ-9 продукта дня на Product Hunt.</p>
+                            <div class="edit-piece-body">
+                                <p class="edit-meta"><span>02 · Leo Recovery</span><span>iOS и Android · #9 Product Hunt</span></p>
+                                <h3>Опора на пути к трезвости.</h3>
+                                <p>Собственное приложение для преодоления зависимостей: тридцать с лишним глав курса, дневник эмоций, аудиопрактики и круглосуточный ИИ-собеседник.</p>
+                                <span class="edit-more">Подробнее о проекте ↗</span>
+                            </div>
+                        </a>
+
+                        <a class="edit-piece folio-reveal" href="work/fides-et-ratio/">
+                            <figure><img class="edit-shot-app" src="../fides-mock.webp?v=3" alt="Fides et Ratio на iPhone" width="1152" height="864" loading="lazy"></figure>
+                            <div class="edit-piece-body">
+                                <p class="edit-meta"><span>03 · Fides et Ratio</span><span>Мобильная медиаплатформа</span></p>
+                                <h3>Духовная традиция в современной форме.</h3>
+                                <p>Католическое приложение на русском языке: более пятисот аудиозаписей Катехизиса, ежедневные чтения, прямой эфир «Радио Мария» и справочный ИИ.</p>
+                                <span class="edit-more">Подробнее о проекте ↗</span>
+                            </div>
                         </a>
                     </div>
-                    <a class="edit-piece folio-reveal" href="work/fides-et-ratio/">
-                        <figure><img class="edit-shot-app" src="../fides-mock.webp?v=3" alt="Fides et Ratio на iPhone" width="1152" height="864" loading="lazy"></figure>
-                        <div>
-                            <p class="edit-meta"><span>Fides et Ratio</span><span>Мобильное приложение</span></p>
-                            <h3>Духовная традиция в современной форме.</h3>
-                            <p>Католическое приложение на русском языке: аудиокурс Катехизиса, молитвы, прямой эфир Радио Мария и ответы на вопросы о вере.</p>
-                        </div>
-                    </a>
-                    <div class="edit-work edit-pair">
+
+                    <div class="edit-pair">
                         <a class="edit-piece folio-reveal" href="work/teni/">
                             <figure><img src="../teni.webp" alt="Чемпионат Тень" width="1280" height="720" loading="lazy"></figure>
-                            <p class="edit-meta"><span>Чемпионат «ТЕНЬ»</span><span>Веб-платформа</span></p>
-                            <h3>Больше, чем сайт чемпионата.</h3>
-                            <p>Публичная витрина всероссийского первенства, приём заявок от участников и внутренняя CRM-система для оргкомитета.</p>
+                            <div class="edit-piece-body">
+                                <p class="edit-meta"><span>04 · Чемпионат «ТЕНЬ»</span><span>Платформа события и CRM</span></p>
+                                <h3>Больше, чем сайт чемпионата.</h3>
+                                <p>Публичная витрина всероссийского первенства в Москве, приём заявок с видеоматериалами и закрытая CRM-система для оргкомитета.</p>
+                                <span class="edit-more">Подробнее о проекте ↗</span>
+                            </div>
                         </a>
+
                         <a class="edit-piece folio-reveal" href="work/vostok-factory/">
                             <figure><img src="../vostok.webp" alt="Фабрика Восток" width="1280" height="720" loading="lazy"></figure>
-                            <p class="edit-meta"><span>Фабрика «Восток»</span><span>Корпоративный сайт</span></p>
-                            <h3>Столетняя история в современном облике.</h3>
-                            <p>Официальный сайт и каталог старейшей кондитерской фабрики Забайкалья, основанной в Чите в 1910 году.</p>
+                            <div class="edit-piece-body">
+                                <p class="edit-meta"><span>05 · Фабрика «Восток»</span><span>Корпоративный сайт и каталог</span></p>
+                                <h3>Столетняя история в современном облике.</h3>
+                                <p>Официальный сайт и каталог старейшей кондитерской фабрики Забайкалья, выпускающей сладости в Чите с 1910 года.</p>
+                                <span class="edit-more">Подробнее о проекте ↗</span>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -207,52 +275,83 @@
 
         <section id="capabilities" class="edit-section">
             <div class="edit-wrap">
-                <p class="edit-eyebrow">Инженерная работа</p>
-                <h2>Интерфейс лишь вершина дела.</h2>
-                <p class="edit-lede">За каждым экраном стоит продуманная серверная часть, базы данных, платёжные контуры и связки со внешними сервисами.</p>
+                <div class="edit-head folio-reveal">
+                    <div>
+                        <p class="edit-eyebrow">03 / Инженерная работа</p>
+                        <h2>Интерфейс лишь вершина дела.</h2>
+                    </div>
+                    <p class="edit-lede">За каждым экраном стоит продуманная серверная часть, базы данных, платёжные контуры и связки со внешними сервисами.</p>
+                </div>
                 <ol class="edit-system">
-                    <li class="folio-reveal"><strong>01</strong><h3>Клиентские приложения</h3><p>Веб-платформы, мобильные приложения для iOS и Android, выверенный интерфейс</p></li>
-                    <li class="folio-reveal"><strong>02</strong><h3>Прикладная логика</h3><p>Проектирование API, личные кабинеты, подписки, приём платежей и CRM-системы</p></li>
-                    <li class="folio-reveal"><strong>03</strong><h3>Инфраструктура</h3><p>Архитектура баз данных, развёртывание на серверах, отказоустойчивость и эксплуатация</p></li>
-                    <li class="folio-reveal"><strong>04</strong><h3>Прикладной ИИ</h3><p>Встраивание языковых моделей, работа с контекстом продукта, осмысленные диалоговые сценарии</p></li>
+                    <li class="folio-reveal">
+                        <strong>01 / Интерфейс</strong>
+                        <h3>Клиентские приложения</h3>
+                        <p>Веб-платформы, мобильные приложения для iOS и Android, выверенный пользовательский путь и чистая вёрстка.</p>
+                    </li>
+                    <li class="folio-reveal">
+                        <strong>02 / Логика</strong>
+                        <h3>Серверная часть и CRM</h3>
+                        <p>Проектирование API, личные кабинеты, подписки, приём платежей и внутренние рабочие кабинеты для команды.</p>
+                    </li>
+                    <li class="folio-reveal">
+                        <strong>03 / Основа</strong>
+                        <h3>Инфраструктура и данные</h3>
+                        <p>Архитектура баз данных, развёртывание на серверах, выпуск в App Store и Google Play, сопровождение в работе.</p>
+                    </li>
+                    <li class="folio-reveal">
+                        <strong>04 / Интеллект</strong>
+                        <h3>Прикладной ИИ</h3>
+                        <p>Встраивание языковых моделей, опора на предметную базу продукта и осмысленные диалоговые сценарии.</p>
+                    </li>
                 </ol>
             </div>
         </section>
 
         <section id="approach" class="edit-section">
             <div class="edit-wrap">
-                <p class="edit-eyebrow">Принципы работы</p>
-                <h2>Понять. Создать. Проверить. Развить.</h2>
-                <p class="edit-lede">Настоящее качество продукта проявляется после запуска первой версии, когда системой начинают пользоваться живые люди.</p>
+                <div class="edit-head folio-reveal">
+                    <div>
+                        <p class="edit-eyebrow">04 / Принципы работы</p>
+                        <h2>Понять. Создать. Проверить. Развить.</h2>
+                    </div>
+                    <p class="edit-lede">Настоящее качество продукта проявляется после запуска первой версии, когда системой начинают пользоваться живые люди.</p>
+                </div>
                 <ol class="edit-steps">
-                    <li class="folio-reveal"><span>01</span><h3>Замысел</h3><p>Вникнуть в суть дела и отсечь лишнее ещё до первой строчки кода.</p></li>
-                    <li class="folio-reveal"><span>02</span><h3>Реализация</h3><p>Собрать цельный продукт: от базы данных и серверной логики до чистого экрана.</p></li>
-                    <li class="folio-reveal"><span>03</span><h3>Проверка</h3><p>Испытать систему на реальных сценариях, нагрузках и пограничных случаях.</p></li>
-                    <li class="folio-reveal"><span>04</span><h3>Развитие</h3><p>Доводить продукт до зрелости, опираясь на практику и обратную связь.</p></li>
+                    <li class="folio-reveal"><span>Этап 01</span><h3>Замысел</h3><p>Вникнуть в суть дела и отсечь лишнее ещё до первой строчки кода.</p></li>
+                    <li class="folio-reveal"><span>Этап 02</span><h3>Реализация</h3><p>Собрать цельный продукт: от базы данных и серверной логики до чистого экрана.</p></li>
+                    <li class="folio-reveal"><span>Этап 03</span><h3>Проверка</h3><p>Испытать систему на реальных сценариях, нагрузках и пограничных случаях.</p></li>
+                    <li class="folio-reveal"><span>Этап 04</span><h3>Развитие</h3><p>Доводить продукт до зрелости, опираясь на практику и обратную связь.</p></li>
                 </ol>
             </div>
         </section>
 
         <section id="about" class="edit-section">
-            <div class="edit-wrap edit-about">
-                <img src="../leonid.webp" alt="Леонид Мельничук" width="1024" height="999">
-                <div class="folio-reveal">
-                    <p class="edit-eyebrow">Об авторе</p>
-                    <h2>Личная ответственность за весь цикл.</h2>
-                    <p>MELNI APPS представляет собой независимую инженерную практику Леонида Мельничука. Я самостоятельно веду продукт от первоначального замысла и архитектуры до выпуска в App Store, Google Play и промышленной эксплуатации в вебе.</p>
+            <div class="edit-wrap">
+                <div class="edit-about folio-reveal">
+                    <img src="../leonid.webp" alt="Леонид Мельничук" width="1024" height="999">
+                    <div>
+                        <p class="edit-eyebrow">05 / Об авторе</p>
+                        <h2>Личная ответственность за весь цикл.</h2>
+                        <p class="edit-about-role">Леонид Мельничук · Основатель, инженер полного цикла</p>
+                        <p>MELNI APPS представляет собой независимую инженерную практику. Я самостоятельно веду продукт от первоначального замысла, дизайна и серверной архитектуры до выпуска в App Store, Google Play и промышленной эксплуатации в вебе.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="edit-section edit-contact">
-            <div class="edit-wrap folio-reveal">
-                <p class="edit-eyebrow">Связь</p>
-                <h2>Обсудим будущий продукт?</h2>
-                <p>Напишите, если вам нужен новый цифровой сервис, мобильное приложение или вдумчивое внедрение ИИ в действующий бизнес.</p>
-                <a class="edit-cta" href="mailto:ricksanchezlm7@gmail.com">Написать письмо</a>
-                <div class="edit-links">
-                    <a href="mailto:ricksanchezlm7@gmail.com">ricksanchezlm7@gmail.com</a>
-                    <a href="mailto:rickytickytavy@gmail.com">rickytickytavy@gmail.com</a>
+            <div class="edit-wrap">
+                <div class="edit-contact-box folio-reveal">
+                    <p class="edit-eyebrow">Связь</p>
+                    <h2>Обсудим будущий продукт?</h2>
+                    <p>Напишите, если вам нужен новый цифровой сервис, мобильное приложение или вдумчивое внедрение ИИ в действующий проект.</p>
+                    <div class="edit-actions">
+                        <a class="edit-cta" href="mailto:ricksanchezlm7@gmail.com">Написать письмо ↗</a>
+                    </div>
+                    <div class="edit-links">
+                        <a href="mailto:ricksanchezlm7@gmail.com">ricksanchezlm7@gmail.com</a>
+                        <a href="mailto:rickytickytavy@gmail.com">rickytickytavy@gmail.com</a>
+                    </div>
                 </div>
                 <footer class="edit-foot">
                     <p>© 2026 MELNI APPS, LLC</p>

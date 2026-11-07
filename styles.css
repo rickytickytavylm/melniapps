@@ -3253,18 +3253,14 @@ button.project-link {
 
 /* Editorial homepage and case studies. Scoped so legal pages stay as they are. */
 .edit {
-    --edit-bg: #070708;
-    --edit-surface: #0e0e11;
-    --edit-surface-2: #141418;
-    --edit-border: rgba(255, 255, 255, 0.09);
-    --edit-border-strong: rgba(255, 255, 255, 0.18);
-    --edit-text: #f5f5f7;
-    --edit-muted: rgba(245, 245, 247, 0.64);
-    --edit-faint: rgba(245, 245, 247, 0.42);
-    background: radial-gradient(ellipse 80% 35% at 50% 0%, rgba(90, 200, 250, 0.06) 0%, transparent 70%), #070708;
+    --edit-text: #f4f4f5;
+    --edit-muted: rgba(244, 244, 245, 0.68);
+    --edit-faint: rgba(244, 244, 245, 0.46);
+    --edit-border: rgba(255, 255, 255, 0.12);
+    --edit-border-strong: rgba(255, 255, 255, 0.22);
+    background: #000;
     color: var(--edit-text);
     overflow-x: clip;
-    position: relative;
 }
 
 .edit-wrap {
@@ -3274,24 +3270,11 @@ button.project-link {
 
 .edit-eyebrow {
     margin: 0;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
     font-family: 'JetBrains Mono', ui-monospace, monospace;
     font-size: 0.72rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--edit-faint);
-}
-
-.edit-eyebrow::before {
-    content: '';
-    width: 0.4rem;
-    height: 0.4rem;
-    border-radius: 50%;
-    background: var(--ember);
-    box-shadow: 0 0 12px rgba(254, 44, 2, 0.65);
-    flex-shrink: 0;
 }
 
 .edit-section {
@@ -3311,13 +3294,13 @@ button.project-link {
 }
 
 .edit h2 {
-    margin: 0.65rem 0 0;
-    max-width: 18ch;
+    margin: 0.55rem 0 0;
+    max-width: 16em;
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-weight: 400;
-    font-size: clamp(2.25rem, 4.4vw, 3.85rem);
-    line-height: 1.02;
-    letter-spacing: -0.025em;
+    font-size: clamp(2.15rem, 4vw, 3.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
     color: #fff;
 }
 
@@ -3351,28 +3334,26 @@ button.project-link {
 }
 
 .edit-cta--ghost {
-    background: rgba(255, 255, 255, 0.04);
+    min-height: 0;
+    padding: 0 0 0.12rem;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
     color: #fff;
-    border: 1px solid var(--edit-border-strong);
 }
 
 .edit-cta--ghost:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: transparent;
+    border-bottom-color: #fff;
     color: #fff;
+    transform: none;
 }
 
 /* Flagship showcase (Kira AI) */
 .edit-flagship {
     display: grid;
-    gap: 1.75rem;
-    padding: 1.35rem;
-    border-radius: 1.5rem;
-    border: 1px solid var(--edit-border-strong);
-    background:
-        radial-gradient(ellipse 70% 60% at 85% 15%, rgba(59, 130, 246, 0.1) 0%, transparent 65%),
-        linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%),
-        var(--edit-surface);
-    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.55);
+    gap: 1.5rem;
 }
 
 .edit-flagship-body {
@@ -3401,20 +3382,20 @@ button.project-link {
 }
 
 .edit-badge--pill {
-    padding: 0.28rem 0.65rem;
-    border-radius: 999px;
-    border: 1px solid var(--edit-border);
-    background: rgba(255, 255, 255, 0.03);
-    color: rgba(255, 255, 255, 0.78);
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    color: rgba(255, 255, 255, 0.62);
 }
 
 .edit-flagship h3 {
-    margin: 0.85rem 0 0;
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 400;
-    font-size: clamp(2.1rem, 3.8vw, 3.25rem);
-    line-height: 1.03;
-    letter-spacing: -0.025em;
+    margin: 0.35rem 0 0;
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 500;
+    font-size: clamp(1.2rem, 1.6vw, 1.45rem);
+    line-height: 1.3;
+    letter-spacing: -0.03em;
     color: #fff;
 }
 
@@ -3428,31 +3409,32 @@ button.project-link {
 .edit-pills {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
-    margin: 1.15rem 0 0;
+    gap: 0.15rem 0;
+    margin: 0.9rem 0 0;
     padding: 0;
     list-style: none;
 }
 
 .edit-pills li {
-    padding: 0.28rem 0.65rem;
-    border-radius: 999px;
-    border: 1px solid var(--edit-border);
-    background: rgba(255, 255, 255, 0.025);
-    font-family: 'JetBrains Mono', ui-monospace, monospace;
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.76);
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    font-size: 0.84rem;
+    color: var(--edit-faint);
+}
+
+.edit-pills li:not(:last-child)::after {
+    content: "·";
+    margin: 0 0.45rem;
+    color: rgba(255, 255, 255, 0.28);
 }
 
 .edit-partner {
     display: flex;
     align-items: center;
-    gap: 0.9rem;
-    margin-top: 1.25rem;
-    padding: 0.85rem 1rem;
-    border-radius: 1rem;
-    border: 1px solid var(--edit-border);
-    background: rgba(255, 255, 255, 0.02);
+    gap: 0.85rem;
+    margin-top: 1.35rem;
 }
 
 .edit-partner img {
@@ -3501,60 +3483,52 @@ button.project-link {
 
 .edit-flagship-media {
     margin: 0;
-    border-radius: 1.1rem;
+    min-width: 0;
     overflow: hidden;
-    border: 1px solid var(--edit-border);
-    background: #141418;
+    background: #111;
+    aspect-ratio: 4 / 3;
     align-self: stretch;
-    display: flex;
 }
 
 .edit-flagship-media img {
     display: block;
     width: 100%;
     height: 100%;
+    max-width: none;
     object-fit: cover;
+    object-position: center;
 }
 
 /* Selected work cards */
 .edit-work {
     display: grid;
-    gap: 1.5rem;
-    margin-top: 2rem;
+    gap: 3rem;
+    margin-top: 0.5rem;
 }
 
 .edit-pair {
     display: grid;
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 
 .edit-piece {
     display: flex;
     flex-direction: column;
     min-width: 0;
-    border-radius: 1.35rem;
-    border: 1px solid var(--edit-border);
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.025) 0%, rgba(255, 255, 255, 0) 100%),
-        var(--edit-surface);
-    overflow: hidden;
     color: inherit;
     text-decoration: none;
-    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.edit-piece:hover {
-    border-color: rgba(255, 255, 255, 0.22);
-    transform: translateY(-2px);
-    box-shadow: 0 22px 50px rgba(0, 0, 0, 0.45);
 }
 
 .edit-piece figure {
     margin: 0;
+    min-width: 0;
     overflow: hidden;
-    background: #141418;
-    border-bottom: 1px solid var(--edit-border);
-    aspect-ratio: 16 / 10;
+    background: #111;
+    aspect-ratio: 16 / 9;
+}
+
+.edit-piece:has(.edit-shot-app) figure {
+    aspect-ratio: 4 / 3;
 }
 
 .edit-piece img {
@@ -3562,25 +3536,19 @@ button.project-link {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.45s ease;
-}
-
-.edit-piece:hover img {
-    transform: scale(1.02);
 }
 
 .edit-piece img.edit-shot-app {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    object-position: center 22%;
+    object-position: center;
 }
 
 .edit-piece-body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 1.35rem 1.35rem 1.5rem;
+    min-width: 0;
+    padding: 0.9rem 0 0;
 }
 
 .edit-meta {
@@ -3598,12 +3566,12 @@ button.project-link {
 }
 
 .edit-piece h3 {
-    margin: 0.65rem 0 0;
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: clamp(1.6rem, 2.4vw, 2.15rem);
-    line-height: 1.08;
-    letter-spacing: -0.02em;
-    font-weight: 400;
+    margin: 0.4rem 0 0;
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+    font-weight: 500;
     color: #fff;
     overflow-wrap: break-word;
 }
@@ -3617,16 +3585,16 @@ button.project-link {
 }
 
 .edit-more {
-    margin-top: auto;
-    padding-top: 1.1rem;
+    margin-top: 0.85rem;
+    align-self: flex-start;
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    font-family: 'JetBrains Mono', ui-monospace, monospace;
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 /* Engineering matrix */
@@ -3642,11 +3610,9 @@ button.project-link {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 0.75rem;
-    padding: 1.5rem;
-    border-radius: 1.25rem;
-    border: 1px solid var(--edit-border);
-    background: var(--edit-surface);
+    gap: 0.45rem;
+    padding: 0 0 1.35rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .edit-system strong {
@@ -3654,16 +3620,16 @@ button.project-link {
     font-size: 0.72rem;
     font-weight: 500;
     letter-spacing: 0.12em;
-    color: var(--ember);
+    color: var(--edit-faint);
 }
 
 .edit-system h3 {
-    margin: 0.25rem 0 0;
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 400;
-    font-size: 1.85rem;
-    line-height: 1.08;
-    letter-spacing: -0.02em;
+    margin: 0.35rem 0 0;
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
     color: #fff;
 }
 
@@ -3687,10 +3653,8 @@ button.project-link {
 }
 
 .edit-steps li {
-    padding: 1.4rem;
-    border-radius: 1.2rem;
-    border: 1px solid var(--edit-border);
-    background: var(--edit-surface);
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .edit-steps span {
@@ -3698,14 +3662,14 @@ button.project-link {
     font-family: 'JetBrains Mono', ui-monospace, monospace;
     font-size: 0.72rem;
     letter-spacing: 0.1em;
-    color: var(--ember);
+    color: var(--edit-faint);
 }
 
 .edit-steps h3 {
-    margin: 0.55rem 0 0;
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 400;
-    font-size: 1.65rem;
+    margin: 0.45rem 0 0;
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 1.05rem;
     letter-spacing: -0.02em;
     color: #fff;
 }
@@ -3713,31 +3677,32 @@ button.project-link {
 /* About panel */
 .edit-about {
     display: grid;
-    gap: 1.75rem;
-    padding: 1.5rem;
-    border-radius: 1.5rem;
-    border: 1px solid var(--edit-border);
-    background: var(--edit-surface);
-    align-items: center;
+    gap: 1.5rem;
+    align-items: start;
+    min-width: 0;
 }
 
 .edit-about img {
-    width: 100%;
-    max-width: 19rem;
-    aspect-ratio: 4 / 4.3;
-    border-radius: 1.1rem;
+    display: block;
+    width: min(100%, 26rem);
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    object-position: center 15%;
-    border: 1px solid var(--edit-border);
+    object-position: center 18%;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: #141414;
 }
 
 .edit-about-role {
-    margin: 0.6rem 0 0 !important;
-    font-family: 'JetBrains Mono', ui-monospace, monospace;
-    font-size: 0.76rem !important;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.78) !important;
+    margin: 0.85rem 0 0 !important;
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.98rem !important;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #fff !important;
 }
 
 /* Contact panel */
@@ -3746,12 +3711,7 @@ button.project-link {
 }
 
 .edit-contact-box {
-    padding: 2rem 1.5rem;
-    border-radius: 1.5rem;
-    border: 1px solid var(--edit-border-strong);
-    background:
-        radial-gradient(ellipse 65% 60% at 50% 0%, rgba(254, 44, 2, 0.08) 0%, transparent 70%),
-        var(--edit-surface);
+    padding: 0;
 }
 
 .edit-links {
@@ -3952,31 +3912,32 @@ button.project-link {
     }
 
     .edit-flagship {
-        grid-template-columns: 1.02fr 0.98fr;
-        padding: 2.25rem;
-        gap: 2.25rem;
+        grid-template-columns: 0.9fr 1.1fr;
+        padding: 0;
+        gap: 3.5rem;
         align-items: center;
     }
 
     .edit-piece--wide {
         display: grid;
-        grid-template-columns: 1.12fr 0.88fr;
-        align-items: stretch;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 2rem;
+        align-items: center;
     }
 
     .edit-piece--wide figure {
-        border-bottom: 0;
-        border-right: 1px solid var(--edit-border);
-        height: 100%;
+        border: 0;
+        height: auto;
     }
 
     .edit-piece--wide .edit-piece-body {
-        padding: 2rem;
+        padding: 0;
         justify-content: center;
     }
 
     .edit-pair {
         grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
         align-items: stretch;
     }
 
@@ -3991,13 +3952,21 @@ button.project-link {
     }
 
     .edit-about {
-        grid-template-columns: 17rem 1fr;
-        padding: 2.25rem;
-        gap: 2.5rem;
+        grid-template-columns: minmax(16rem, 22rem) minmax(0, 1fr);
+        gap: 4rem;
+        align-items: center;
+        padding: 0;
+    }
+
+    .edit-about img {
+        width: 100%;
+        max-width: none;
+        aspect-ratio: 1 / 1;
+        object-position: center 18%;
     }
 
     .edit-contact-box {
-        padding: 3rem;
+        padding: 0;
     }
 
     .case-facts {
@@ -4015,12 +3984,12 @@ button.project-link {
         padding: 3.5rem 0;
     }
 
-    .edit-flagship {
-        padding: 1.15rem;
+    .edit-flagship-media {
+        order: -1;
     }
 
     .edit-piece-body {
-        padding: 1.15rem 1.15rem 1.3rem;
+        padding: 0.8rem 0 0;
     }
 }
 
